@@ -6,7 +6,6 @@ import { FaHtml5 } from 'react-icons/fa';
 import { FaCss3Alt } from 'react-icons/fa6';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { FaBootstrap } from 'react-icons/fa6';
-import { FaSass } from 'react-icons/fa';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { SiMongodb } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
@@ -14,26 +13,29 @@ import { IoLogoNodejs } from 'react-icons/io';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiPostman } from 'react-icons/si';
 import { SiInsomnia } from 'react-icons/si';
-// import { TbBrandNextjs } from 'react-icons/tb';
 import { SiMysql } from 'react-icons/si';
 import resume from '../assets/resume.pdf';
 
 const About = () => {
     return (
         <section className="pt-16" id="about">
-            {/* <h1 className="font-bold text-4xl xl:text-[2.5rem] text-center bg-gradient-to-b from-sky-700 to-sky-400 text-transparent bg-clip-text">
-                About Me
-            </h1> */}
             <div className="max-w-7xl mx-auto px-5 xl:px-14 flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-1 mt-5 xl:mt-10">
                 <img
                     src={tjImage5}
                     alt="image"
                     className="w-96 xl:w-[29rem] bg-inherit"
                 />
-                <div className="flex flex-col lg:flex-row max-w-3xl lg:max-w-none lg:mt-0 gap-14 lg:gap-16 xl:gap-28">
+                <div className="flex flex-col lg:flex-row max-w-2xl lg:max-w-none lg:mt-0 gap-14 lg:gap-16 xl:gap-28">
                     <div className="flex flex-row lg:flex-col justify-center items-center gap-7">
-                        <FaFacebookF className="text-[1.3rem] bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
-                        <FaGithub className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
+                        <a
+                            href="https://www.facebook.com/tj.villaluz.3/"
+                            target="_blank"
+                        >
+                            <FaFacebookF className="text-[1.3rem] bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
+                        </a>
+                        <a href="https://github.com/thygz" target="_blank">
+                            <FaGithub className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
+                        </a>
                         <FaLinkedinIn className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
                     </div>
                     <div className="flex flex-col items-center lg:items-start">
@@ -75,26 +77,6 @@ const About = () => {
                                 Download CV
                             </a>
                         </button>
-                        {/* <div>
-                            <h1 className="text-slate-600 font-bold text-xl mt-10">
-                                Tech Stack
-                            </h1>
-                            <div className="flex flex-wrap gap-5 text-5xl mt-5">
-                                <FaHtml5 className="text-[#e34c26]" />
-                                <FaCss3Alt className="text-[#264de4]" />
-                                <IoLogoJavascript className="text-[#f0db4f]" />
-                                <FaBootstrap className="text-[#563d7c]" />
-                                <FaSass className="text-[#cd6799]" />
-                                <FaReact className="text-[#61dbfb]" />
-                                <SiMongodb className="text-[#4db33d]" />
-                                <IoLogoNodejs className="text-[#3c873a]" />
-                                <RiTailwindCssFill className="text-[#4c1d95]" />
-                                <SiPostman className="text-[#ef5b25]" />
-                                <SiInsomnia className="text-[#73177e]" />
-                                <TbBrandNextjs className="text-slate-700" />
-                                <SiMysql className="text-[#00758f]" />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
@@ -105,7 +87,7 @@ const About = () => {
                             Tech Stacks
                         </h1>
                         <p className="text-lg text-sky-950 font-medium text-center md:text-start">
-                            Tools that I use when creating your desire
+                            Tools that I used when creating your desire
                             website...
                         </p>
                     </div>
@@ -114,7 +96,6 @@ const About = () => {
                         <FaCss3Alt className="text-[#264de4] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <IoLogoJavascript className="text-[#f0db4f] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <FaBootstrap className="text-[#563d7c] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        {/* <FaSass className="text-[#cd6799] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" /> */}
                         <SiMongodb className="text-[#4db33d] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <FaReact className="text-[#61dbfb] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <IoLogoNodejs className="text-[#3c873a] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
@@ -122,7 +103,6 @@ const About = () => {
                         <BiLogoTypescript className="text-[#3178c6] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <SiPostman className="text-[#ef5b25] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <SiInsomnia className="text-[#73177e] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        {/* <TbBrandNextjs className="text-slate-700 bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" /> */}
                         <SiMysql className="text-[#00758f] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                     </div>
                 </div>
