@@ -4,14 +4,10 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                lato: ['Lato', 'sans - serif'],
-                arizonia: ['Arizonia', 'cursive'],
+                lato: ['Lato', 'sans-serif'],
             },
             backgroundImage: {
-                background: 'url(./assets/background.jpg)',
-                background1: 'url(./assets/background1.jpg)',
                 background2: 'url(./assets/background2.jpg)',
-                background3: 'url(./assets/background3.jpg)',
             },
         },
     },

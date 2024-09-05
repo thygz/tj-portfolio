@@ -85,7 +85,7 @@ const Skills = () => {
             description: 'Capable of using imagination to generate new ideas',
         },
     ];
-    // bg-gradient-to-b from-sky-700 to-sky-400 text-transparent bg-clip-text
+
     return (
         <section className="pt-20 pb-24 bg-[#A7C7E7] bg-opacity-30" id="skills">
             <div className="max-w-7xl mx-auto px-5">

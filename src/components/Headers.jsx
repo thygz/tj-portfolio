@@ -184,11 +184,6 @@ const Headers = () => {
                         : 'opacity-0 pointer-events-none'
                 }`}
             ></div>
-            {/* <div className="hidden">
-                {toggleMenu
-                    ? (document.body.style.overflow = 'hidden')
-                    : (document.body.style.overflow = 'visible')}
-            </div> */}
         </header>
     );
 };
