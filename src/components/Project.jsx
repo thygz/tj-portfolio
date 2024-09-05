@@ -1,13 +1,10 @@
 import traxxRecipe1 from '../assets/projectImage/TraxxRecipe1.jpg';
-import traxxRecipe2 from '../assets/projectImage/TraxxRecipe2.png';
 import traxxRecipe3 from '../assets/projectImage/TraxxRecipe3.png';
 import traxxRecipe4 from '../assets/projectImage/TraxxRecipe4.png';
 import traxxDeploy1 from '../assets/projectImage/TraxxDeploy1.png';
-import traxxDeploy2 from '../assets/projectImage/TraxxDeploy2.png';
 import traxxDeploy3 from '../assets/projectImage/TraxxDeploy3.png';
 import traxxDeploy4 from '../assets/projectImage/TraxxDeploy4.png';
 import UsedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
-import UsedCarsTraxx2 from '../assets/projectImage/UsedCarsTraxx2.png';
 import UsedCarsTraxx3 from '../assets/projectImage/UsedCarsTraxx3.png';
 import UsedCarsTraxx4 from '../assets/projectImage/UsedCarsTraxx4.png';
 import { FaArrowRight } from 'react-icons/fa6';
@@ -18,11 +15,7 @@ const Project = () => {
             <h1 className="font-bold text-3xl text-center text-sky-950 mb-10">
                 My Works
             </h1>
-            {/* <div className="overflow-x-hidden w-0 h-0 border-r-[100vw] border-solid border-r-[#a2d0c0] border-t-[5vw] border-t-transparent my-[-1px]"></div> */}
-            <div
-                className="border-t-2 border-b border-[#eaf2fa]"
-                // style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            >
+            <div className="border-t-2 border-b border-[#eaf2fa]">
                 <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-3 lg:gap-5 flex-1 px-5 xl:px-10 pb-12 md:pb-0">
                         <h1 className="text-sky-950 text-2xl font-extrabold">
@@ -56,11 +49,6 @@ const Project = () => {
                             alt="project image"
                             className="absolute w-60 md:w-52 lg:w-64 xl:w-[17rem] inset-0 mx-auto my-auto border-2 border-teal-500 shadow-lg rounded z-30 hover:scale-105 duration-500"
                         />
-                        {/* <img
-                            src={traxxRecipe2}
-                            alt="image"
-                            className="absolute w-20 md:w-28 lg:w-32 top-28 right-3 min-[500px]:right-16 md:-right-3 border-4 border-teal-500 shadow-2xl rounded-xl z-10 lg:hover:bottom-0 duration-500"
-                        /> */}
                         <img
                             src={traxxRecipe3}
                             alt="image"
@@ -74,11 +62,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="w-0 h-0 border-r-[100vw] border-solid border-r-[#a2d0c0] border-b-[5vw] border-b-[#a4b6dd] my-[-1px]"></div> */}
-            <div
-                className="border-t border-b border-[#eaf2fa]"
-                // style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            >
+            <div className="border-t border-b border-[#eaf2fa]">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex relative w-full md:w-[50%] overflow-hidden md:rounded-tl-2xl md:rounded-bl-2xl h-[28rem] md:h-[22rem] lg:h-[29rem]">
                         <img
@@ -86,11 +70,6 @@ const Project = () => {
                             alt="project image"
                             className="absolute w-[17.5rem] md:w-[17rem] lg:w-[22rem] xl:w-[23rem] top-[7.4rem] md:top-[4.8rem] lg:top-[6.3rem] xl:top-[6rem] right-5 xl:right-12 border border-blue-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
                         />
-                        {/* <img
-                            src={traxxDeploy2}
-                            alt="image"
-                            className="absolute w-20 md:w-28 lg:w-32 xl:w-36 bottom-16 right-6 border-4 border-blue-500 rounded-xl z-0 md:hover:top-[-1rem] lg:hover:top-5 xl:hover:-top-10 duration-500"
-                        /> */}
                         <img
                             src={traxxDeploy3}
                             alt="image"
@@ -107,16 +86,16 @@ const Project = () => {
                             TraxxDeploy
                         </h1>
                         <p className="text-sky-950 text-base md:text-sm lg:text-base font-normal">
-                            This website is about a web apps deployment platform
+                            A static website about web apps deployment platform
                             from large scale enterprise API's to static websites
                             for individuals.
                         </p>
                         <p className="text-sky-950 text-base md:text-sm lg:text-base font-normal">
-                            Originally this website made using HTML, CSS and JS.
-                            I try to convert the code to practice ReactJS and
-                            this is the result. This is my first encounter on
-                            React JS and I'm amaze on JSX and how single page
-                            application works.
+                            Originally this website code using HTML, CSS and JS.
+                            I convert the code to practice ReactJS and this is
+                            the result. This is my first encounter on React JS
+                            and I'm amaze on JSX and how single page application
+                            works.
                         </p>
                         <h5 className="text-sky-950 text-base md:text-sm lg:text-base font-semibold">
                             ReactJS
@@ -130,11 +109,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="w-0 h-0 border-r-[100vw] border-solid border-r-[#A7C7E7] border-t-[5vw] border-t-[#a4b6dd] my-[-1px]"></div> */}
-            <div
-                className="border-t border-b-2 border-[#eaf2fa]"
-                // style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            >
+            <div className="border-t border-b-2 border-[#eaf2fa]">
                 <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-3 lg:gap-5 flex-1 px-5 xl:px-10 pb-12 md:pb-0">
                         <h1 className="text-sky-950 text-2xl font-extrabold">
@@ -169,11 +144,6 @@ const Project = () => {
                             alt="project image"
                             className="absolute w-56 md:w-52 lg:w-[18rem] xl:w-[19rem] top-[7.5rem] md:top-[4.8rem] lg:top-[5.8rem] xl:top-[5.6rem] right-5 xl:right-12 border border-cyan-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
                         />
-                        {/* <img
-                            src={UsedCarsTraxx2}
-                            alt="image"
-                            className="absolute w-20 md:w-28 lg:w-32 xl:w-36 -top-10 right-5 border-4 border-cyan-500 rounded-xl z-10 hover:-bottom-16 md:hover:left-0 lg:hover:-left-3 xl:hover:left-24 duration-500"
-                        /> */}
                         <img
                             src={UsedCarsTraxx3}
                             alt="image"
@@ -187,7 +157,6 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="w-0 h-0 border-r-[100vw] border-solid border-r-[#A7C7E7] border-b-[5vw] border-b-transparent my-[-1px]"></div> */}
         </section>
     );
 };
