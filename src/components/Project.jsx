@@ -8,6 +8,8 @@ import UsedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
 import UsedCarsTraxx3 from '../assets/projectImage/UsedCarsTraxx3.png';
 import UsedCarsTraxx4 from '../assets/projectImage/UsedCarsTraxx4.png';
 import { FaArrowRight } from 'react-icons/fa6';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
@@ -36,12 +38,18 @@ const Project = () => {
                         <h5 className="text-sky-950 text-base md:text-sm lg:text-base font-semibold">
                             HTML, CSS & Javascript with API
                         </h5>
-                        <a
-                            href=""
-                            className="flex justify-start items-center gap-2 font-extrabold text-sky-950 text-lg md:text-base lg:text-lg"
+                        <Link
+                            to="https://traxxrecipe.vercel.app/"
+                            target="_blank"
+                            className="flex justify-start items-center gap-2 w-20 group"
                         >
-                            Live <FaArrowRight />
-                        </a>
+                            <p className="font-bold text-sky-950 text-lg md:text-base lg:text-lg">
+                                Live
+                            </p>
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-sky-950">
+                                <FaArrowUpRightFromSquare className="text-white text-sm" />
+                            </div>
+                        </Link>
                     </div>
                     <div className="flex relative w-full md:w-[50%] overflow-hidden md:rounded-tr-2xl md:rounded-br-2xl h-[28rem] md:h-[22rem] lg:h-[29rem]">
                         <img
@@ -100,12 +108,18 @@ const Project = () => {
                         <h5 className="text-sky-950 text-base md:text-sm lg:text-base font-semibold">
                             ReactJS
                         </h5>
-                        <a
-                            href=""
-                            className="flex justify-start items-center gap-2 font-extrabold text-sky-950 text-lg md:text-base lg:text-lg"
+                        <Link
+                            to="https://traxx-deploy.vercel.app/"
+                            target="_blank"
+                            className="flex justify-start items-center gap-2 w-20 group"
                         >
-                            Live <FaArrowRight />
-                        </a>
+                            <p className="font-bold text-sky-950 text-lg md:text-base lg:text-lg">
+                                Live
+                            </p>
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-sky-950">
+                                <FaArrowUpRightFromSquare className="text-white text-sm" />
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -131,12 +145,18 @@ const Project = () => {
                             ReactJS, MongoDB, Express, NodeJS, Tailwind,
                             Firebase
                         </h5>
-                        <a
-                            href=""
-                            className="flex justify-start items-center gap-2 font-extrabold text-sky-950 text-lg md:text-base lg:text-lg"
+                        <Link
+                            to="https://usedcarstraxx-mern.onrender.com"
+                            target="_blank"
+                            className="flex justify-start items-center gap-2 w-20 group"
                         >
-                            Live <FaArrowRight />
-                        </a>
+                            <p className="font-bold text-sky-950 text-lg md:text-base lg:text-lg">
+                                Live
+                            </p>
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-sky-950">
+                                <FaArrowUpRightFromSquare className="text-white text-sm" />
+                            </div>
+                        </Link>
                     </div>
                     <div className="flex relative w-full md:w-[50%] overflow-hidden md:rounded-tr-2xl md:rounded-br-2xl h-[28rem] md:h-[22rem] lg:h-[29rem]">
                         <img
