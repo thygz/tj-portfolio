@@ -36,7 +36,12 @@ const About = () => {
                         <a href="https://github.com/thygz" target="_blank">
                             <FaGithub className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
                         </a>
-                        <FaLinkedinIn className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
+                        <a
+                            href="https://www.linkedin.com/in/teejay-villaluz-1a3248328/"
+                            target="_blank"
+                        >
+                            <FaLinkedinIn className="text-2xl bg-gradient-to-b lg:bg-gradient-to-r from-[#A7C7E7] to-sky-950 text-white p-[0.35rem] w-9 h-9 rounded-md cursor-pointer" />
+                        </a>
                     </div>
                     <div className="flex flex-col items-center lg:items-start">
                         <h1 className="font-bold text-3xl text-sky-950 text-center lg:text-start">
