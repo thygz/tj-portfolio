@@ -13,7 +13,7 @@ const Hero = () => {
             className="bg-background2 bg-center bg-cover bg-no-repeat -mt-20 pt-20"
             id="hero"
         >
-            <div className="max-w-7xl mx-auto flex gap-2 lg:gap-0 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center pl-5 pb-24 sm:pb-24 lg:pb-0 relative">
+            <div className="max-w-7xl mx-auto flex gap-0 md:gap-2 lg:gap-0 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center pl-5 pb-24 sm:pb-24 lg:pb-0 relative">
                 <div className="max-w-xl md:max-w-xl lg:max-w-5xl mx-auto flex flex-1 flex-col justify-center lg:justify-start items-center lg:items-start px-0 lg:px-2 mt-3 lg:mt-0 pr-5 lg:pr-0 z-10">
                     <motion.p
                         variants={animation(0.5)}
