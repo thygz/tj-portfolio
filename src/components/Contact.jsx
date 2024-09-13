@@ -40,8 +40,8 @@ const Contact = () => {
                             Get in touch
                         </h1>
                         <p className="text-[#eaf2fa] text-base xl:text-lg font-normal">
-                            It's my pleasure to be part of your team and enhance
-                            my knowledge in coding.
+                            It's my pleasure to be part of your team and have
+                            enhanced knowledge in coding.
                         </p>
                         <div className="flex flex-col gap-5 text-[#eaf2fa] text-base xl:text-lg font-medium mt-3">
                             <a

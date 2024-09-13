@@ -48,11 +48,11 @@ const About = () => {
                             About Me
                         </h1>
                         <p className="font-normal mt-5 xl:mt-7 text-sky-950 text-lg text-center lg:text-start">
-                            Web developing is quite new to me since I am a
-                            career shifter. I worked as an Equipment and Process
-                            Engineer for the past 10 years. But web development
-                            has always been a great interest to me. I was
-                            trained by{' '}
+                            Web development is quite new to me since I am a
+                            career shifter. I worked as an equipment and process
+                            engineer for the past 10 years. But web development
+                            has always been of great interest to me. I was
+                            trained by the{' '}
                             <a
                                 href="https://www.facebook.com/groups/685104802630658"
                                 target="_blank"
@@ -67,14 +67,14 @@ const About = () => {
                                 target="_blank"
                                 className="underline underline-offset-2 font-semibold"
                             >
-                                realboss.ai
+                                Realboss.ai
                             </a>
                             . Aside from cars and playing guitar, looking out
                             for challenging projects to work on excites me.
                         </p>
                         <p className="font-semibold mt-8 lg:mt-3 text-sky-950 text-lg xl:text-lg text-center lg:text-start">
-                            My MISSION: Make your product/services attractive to
-                            clients and present your business in the most
+                            My MISSION: Make your products/services attractive
+                            to clients and present your business in the most
                             creative way.
                         </p>
                         <button className="w-40 py-3 rounded-full border border-sky-950 bg-sky-950 text-white text-base font-semibold hover:translate-y-1.5 duration-300 mt-8">
@@ -92,8 +92,7 @@ const About = () => {
                             Tech Stacks
                         </h1>
                         <p className="text-lg text-sky-950 font-medium text-center md:text-start">
-                            Tools that I used when creating your desire
-                            website...
+                            Tools that I used when creating your desired website
                         </p>
                     </div>
                     <div className="flex flex-1 justify-center items-center flex-wrap gap-x-14 lg:gap-x-7 gap-y-5 md:gap-y-4 lg:gap-y-14 text-5xl">
