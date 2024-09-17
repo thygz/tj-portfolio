@@ -77,7 +77,7 @@ const About = () => {
                             to clients and present your business in the most
                             creative way.
                         </p>
-                        <button className="w-40 py-3 rounded-full border border-sky-950 bg-sky-950 text-white text-base font-semibold hover:translate-y-1.5 duration-300 mt-8">
+                        <button className="w-40 py-3 rounded-full border border-sky-950 bg-sky-950 text-white text-base font-semibold hover:bg-opacity-85 duration-300 active:-translate-y-5 mt-8">
                             <a href={resume} download="TJ_Resume">
                                 Download CV
                             </a>
