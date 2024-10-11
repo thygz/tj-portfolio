@@ -100,7 +100,7 @@ const Headers = () => {
                     >
                         <Link to="/">
                             <BiSolidUser
-                                className={`text-3xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.55rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
+                                className={`text-3xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.55rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'hero'
                                         ? 'text-white bg-slate-700'
                                         : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
@@ -112,7 +112,7 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('skills')}>
                         <Link to="/">
                             <SiSkillshare
-                                className={`text-4xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-2 min-[900px]:p-1.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
+                                className={`text-4xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-2 min-[900px]:p-1.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'skills'
                                         ? 'text-white bg-slate-700'
                                         : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
@@ -124,7 +124,7 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('about')}>
                         <Link to="/">
                             <SiAboutdotme
-                                className={`text-3xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.65rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
+                                className={`text-3xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.65rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'about'
                                         ? 'text-white bg-slate-700'
                                         : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
@@ -136,7 +136,7 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('projects')}>
                         <Link to="/">
                             <LiaProjectDiagramSolid
-                                className={`text-lg w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.9rem] min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
+                                className={`text-lg w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.9rem] min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'projects'
                                         ? 'text-white bg-slate-700'
                                         : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
@@ -148,7 +148,7 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('contact')}>
                         <Link to="/">
                             <MdEmail
-                                className={`text-2xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-3 min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
+                                className={`text-2xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-3 min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'contact'
                                         ? 'text-white bg-slate-700'
                                         : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'

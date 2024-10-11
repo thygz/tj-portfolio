@@ -18,9 +18,9 @@ const Project = () => {
                 project.
             </h1>
             <div className="border-t-2 border-b border-[#eaf2fa]">
-                <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-12 lg:pb-0">
-                        <h1 className="text-slate-700 text-3xl font-semibold">
+                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
+                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
+                        <h1 className="text-slate-700 text-3xl font-normal tracking-wide">
                             TraxxRecipe
                         </h1>
                         <div>
@@ -37,7 +37,7 @@ const Project = () => {
                                 and sometimes .then when fetching data.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-medium">
+                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal">
                             HTML, CSS & Javascript with API
                         </h5>
                         <Link
@@ -45,7 +45,7 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-semibold text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
                                 Live
                             </p>
                             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
@@ -88,7 +88,7 @@ const Project = () => {
                 </div>
             </div>
             <div className="border-t border-b border-[#eaf2fa]">
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
+                <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tl-2xl md:rounded-bl-2xl h-[28rem] lg:h-[29rem]">
                         <Link
                             to="https://traxx-deploy.vercel.app/"
@@ -121,8 +121,8 @@ const Project = () => {
                             />
                         </Link>
                     </div>
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-12 lg:pb-0">
-                        <h1 className="text-slate-700 text-3xl font-semibold">
+                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
+                        <h1 className="text-slate-700 text-3xl font-normal tracking-wide">
                             TraxxDeploy
                         </h1>
                         <div>
@@ -139,7 +139,7 @@ const Project = () => {
                                 JSX and how single-page application works.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-medium">
+                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal">
                             ReactJS
                         </h5>
                         <Link
@@ -147,7 +147,7 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-semibold text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
                                 Live
                             </p>
                             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
@@ -158,9 +158,9 @@ const Project = () => {
                 </div>
             </div>
             <div className="border-t border-b-2 border-[#eaf2fa]">
-                <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-12 lg:pb-0">
-                        <h1 className="text-slate-700 text-3xl font-semibold">
+                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
+                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
+                        <h1 className="text-slate-700 text-3xl font-normal tracking-wide">
                             UsedCarsTraxx
                         </h1>
                         <div>
@@ -179,7 +179,7 @@ const Project = () => {
                                 hooks etc.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-medium text-opacity-80">
+                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal text-opacity-80">
                             ReactJS, MongoDB, Express, NodeJS, Tailwind
                         </h5>
                         <Link
@@ -187,7 +187,7 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-semibold text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
                                 Live
                             </p>
                             <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
