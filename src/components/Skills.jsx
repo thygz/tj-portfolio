@@ -87,19 +87,19 @@ const Skills = () => {
     ];
 
     return (
-        <section className="pt-20 pb-24 bg-[#A7C7E7] bg-opacity-30" id="skills">
-            <div className="max-w-7xl mx-auto px-5">
-                <h1 className="text-center text-3xl font-bold text-sky-950">
-                    My Services
+        <section className="pt-20 pb-28 bg-[#A7C7E7] bg-opacity-60" id="skills">
+            <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10">
+                <h1 className="text-6xl sm:text-7xl font-extrabold text-slate-700 tracking-tighter">
+                    services.
                 </h1>
-                <div className="flex justify-center items-center gap-5 mt-8">
+                <div className="flex gap-5 mt-6">
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
-                            className={`font-medium w-28 xl:w-32 py-1 rounded-full text-sm xl:text-base ${
+                            className={`font-semibold text-xl lg:text-lg ${
                                 skills === services
-                                    ? 'bg-sky-950 text-white border border-sky-950'
-                                    : 'border text-sky-950 border-sky-950 bg-white hover:text-white hover:bg-[#A7C7E7] hover:border-[#A7C7E7] duration-500'
+                                    ? 'text-slate-700 underline underline-offset-8 decoration-2'
+                                    : 'text-slate-500 hover:text-slate-700 duration-500'
                             }`}
                             onClick={() => setServices(skills)}
                         >
@@ -108,49 +108,55 @@ const Skills = () => {
                     ))}
                 </div>
                 {services === 'Coding Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-14 mt-10 px-1 sm:px-5 xl:px-20">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-8">
                         {codingSkillsContent.map((skills, index) => (
-                            <div key={index} className="relative group">
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-5 bg-white border border-sky-950 duration-300 rounded-xl w-[10.3rem] min-[520px]:w-52 xl:w-64 h-[9.3rem] min-[520px]:h-48 xl:h-60 relative z-10">
+                            <div
+                                key={index}
+                                className="relative group w-full sm:w-auto"
+                            >
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-white border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
-                                        className="w-6 min-[520px]:w-8 xl:w-9"
+                                        className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-sm min-[520px]:text-base xl:text-lg font-bold text-sky-950">
+                                        <h1 className="text-xl lg:text-lg font-semibold text-slate-700">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-3 text-[0.6rem] min-[520px]:text-xs xl:text-sm text-sky-950">
+                                        <p className="mt-1 text-lg lg:text-base text-slate-700 font-light">
                                             {skills.description}
                                         </p>
                                     </div>
                                 </div>
-                                <div className="absolute w-[10.5rem] min-[520px]:w-52 xl:w-64 h-[9.5rem] min-[520px]:h-48 xl:h-60 bg-[#A7C7E7] rounded-xl rotate-6 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
+                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-[#A7C7E7] rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
                             </div>
                         ))}
                     </div>
                 )}
                 {services === 'Soft Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-14 mt-10 px-1 sm:px-5 xl:px-20">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-8">
                         {softSkillsContent.map((skills, index) => (
-                            <div key={index} className="relative group">
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-5 bg-white border border-sky-950 duration-300 rounded-xl w-[10.3rem] min-[520px]:w-52 xl:w-64 h-[9.3rem] min-[520px]:h-48 xl:h-60 relative z-10">
+                            <div
+                                key={index}
+                                className="relative group w-full sm:w-auto"
+                            >
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-white border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
-                                        className="w-6 min-[520px]:w-8 xl:w-9"
+                                        className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-sm min-[520px]:text-base xl:text-lg font-bold text-sky-950">
+                                        <h1 className="text-xl lg:text-lg font-semibold text-slate-700">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-3 text-[0.6rem] min-[520px]:text-xs xl:text-sm text-sky-950">
+                                        <p className="mt-1 text-lg lg:text-base text-slate-700 font-light">
                                             {skills.description}
                                         </p>
                                     </div>
                                 </div>
-                                <div className="absolute w-[10.5rem] min-[520px]:w-52 xl:w-64 h-[9.5rem] min-[520px]:h-48 xl:h-60 bg-[#A7C7E7] rounded-xl rotate-6 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
+                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-[#A7C7E7] rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
                             </div>
                         ))}
                     </div>

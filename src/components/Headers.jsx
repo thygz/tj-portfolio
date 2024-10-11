@@ -8,6 +8,7 @@ import { CgMenuGridO } from 'react-icons/cg';
 import { IoIosClose } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Headers = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -71,23 +72,24 @@ const Headers = () => {
     return (
         <header
             className={`top-0 z-40 ${
-                scrolled
-                    ? 'sticky bg-gradient-to-b from-[#A7C7E7] to-slate-50 bg-opacity-90 shadow-md'
-                    : 'static'
+                scrolled ? 'sticky bg-slate-50 shadow-md' : 'static'
             }`}
         >
-            <div
-                className={`max-w-7xl mx-auto flex justify-between items-center py-1.5 xl:py-2 px-5 z-50`}
+            <motion.div
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="max-w-7xl mx-auto flex justify-between items-center py-2 xl:py-2.5 px-5 md:px-9 lg:px-5 z-50"
             >
                 <img
                     src={logo}
                     alt="logo"
-                    className="w-[5.5rem] sm:w-[6rem] cursor-pointer"
+                    className="w-12 xl:w-14 cursor-pointer"
                     onClick={() => scrollToTop()}
                 />
                 <ul
-                    className={`flex gap-1 md:gap-7 lg:gap-10 flex-col md:flex-row justify-center items-center fixed right-3 md:static cursor-pointer z-[100] transition-all duration-300 ease-in-out ${
-                        toggleMenu ? 'top-14' : 'top-[-50%]'
+                    className={`flex gap-1 min-[900px]:gap-7 lg:gap-10 flex-col min-[900px]:flex-row justify-center items-center fixed top-20 min-[900px]:static cursor-pointer z-[100] transition-all duration-300 ease-in-out ${
+                        toggleMenu ? 'right-3 md:right-7' : '-right-20'
                     }`}
                 >
                     <li
@@ -98,10 +100,10 @@ const Headers = () => {
                     >
                         <Link to="/">
                             <BiSolidUser
-                                className={`text-3xl w-12 md:w-10 h-12 md:h-10 p-[0.55rem] md:p-2 border-2 border-sky-950 md:border-none rounded-xl md:rounded-full ${
+                                className={`text-3xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.55rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'hero'
-                                        ? 'text-white bg-sky-950'
-                                        : 'text-sky-950 bg-slate-100 md:bg-transparent hover:bg-slate-300 duration-300'
+                                        ? 'text-white bg-slate-700'
+                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
                                 }`}
                                 onClick={() => setToggleMenu(false)}
                             />
@@ -110,10 +112,10 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('skills')}>
                         <Link to="/">
                             <SiSkillshare
-                                className={`text-4xl w-12 md:w-10 h-12 md:h-10 p-2 md:p-1.5 border-2 border-sky-950 md:border-none rounded-xl md:rounded-full ${
+                                className={`text-4xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-2 min-[900px]:p-1.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'skills'
-                                        ? 'text-white bg-sky-950'
-                                        : 'text-sky-950 bg-slate-100 md:bg-transparent hover:bg-slate-300 duration-300'
+                                        ? 'text-white bg-slate-700'
+                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
                                 }`}
                                 onClick={() => setToggleMenu(false)}
                             />
@@ -122,10 +124,10 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('about')}>
                         <Link to="/">
                             <SiAboutdotme
-                                className={`text-3xl w-12 md:w-10 h-12 md:h-10 p-[0.65rem] md:p-2 border-2 border-sky-950 md:border-none rounded-xl md:rounded-full ${
+                                className={`text-3xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.65rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'about'
-                                        ? 'text-white bg-sky-950'
-                                        : 'text-sky-950 bg-slate-100 md:bg-transparent hover:bg-slate-300 duration-300'
+                                        ? 'text-white bg-slate-700'
+                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
                                 }`}
                                 onClick={() => setToggleMenu(false)}
                             />
@@ -134,10 +136,10 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('projects')}>
                         <Link to="/">
                             <LiaProjectDiagramSolid
-                                className={`text-lg w-12 md:w-10 h-12 md:h-10 p-[0.9rem] md:p-2.5 border-2 border-sky-950 md:border-none rounded-xl md:rounded-full ${
+                                className={`text-lg w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-[0.9rem] min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'projects'
-                                        ? 'text-white bg-sky-950'
-                                        : 'text-sky-950 bg-slate-100 md:bg-transparent hover:bg-slate-300 duration-300'
+                                        ? 'text-white bg-slate-700'
+                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
                                 }`}
                                 onClick={() => setToggleMenu(false)}
                             />
@@ -146,10 +148,10 @@ const Headers = () => {
                     <li onClick={() => scrollToSection('contact')}>
                         <Link to="/">
                             <MdEmail
-                                className={`text-2xl w-12 md:w-10 h-12 md:h-10 p-3 md:p-2.5 border-2 border-sky-950 md:border-none rounded-xl md:rounded-full ${
+                                className={`text-2xl w-12 min-[900px]:w-10 h-12 min-[900px]:h-10 p-3 min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
                                     activeLink === 'contact'
-                                        ? 'text-white bg-sky-950'
-                                        : 'text-sky-950 bg-slate-100 md:bg-transparent hover:bg-slate-300 duration-300'
+                                        ? 'text-white bg-slate-700'
+                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
                                 }`}
                                 onClick={() => setToggleMenu(false)}
                             />
@@ -158,24 +160,24 @@ const Headers = () => {
                 </ul>
                 <div className="flex justify-center items-center gap-3">
                     <button
-                        className="hidden md:flex justify-center items-center bg-sky-950 shadow-md px-4 py-3 rounded-full text-white text-sm sm:text-base font-semibold hover:bg-opacity-85 duration-300 active:-translate-y-5 cursor-pointer z-10"
+                        className="hidden min-[900px]:flex justify-center items-center bg-slate-700 shadow-md px-4 py-3 rounded-full text-white text-sm sm:text-base font-semibold hover:bg-opacity-85 duration-300 active:-translate-y-5 cursor-pointer z-10"
                         onClick={() => scrollToContact()}
                     >
                         Contact Me
                     </button>
                     {toggleMenu ? (
                         <IoIosClose
-                            className="text-4xl text-sky-950 z-10 cursor-pointer md:hidden"
+                            className="text-4xl text-slate-700 z-10 cursor-pointer min-[900px]:hidden"
                             onClick={() => setToggleMenu(false)}
                         />
                     ) : (
                         <CgMenuGridO
-                            className="text-4xl text-sky-950 z-10 cursor-pointer md:hidden"
+                            className="text-[2.6rem] text-slate-700 z-10 cursor-pointer min-[900px]:hidden"
                             onClick={() => setToggleMenu(true)}
                         />
                     )}
                 </div>
-            </div>
+            </motion.div>
             <div
                 onClick={() => setToggleMenu(false)}
                 className={`fixed bg-transparent z-50 top-0 left-0 right-0 bottom-0 ${

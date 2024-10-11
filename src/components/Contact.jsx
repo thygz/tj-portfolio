@@ -33,17 +33,20 @@ const Contact = () => {
     return (
         <section className="pt-32" id="contact">
             <Toaster />
-            <div className="bg-[#06223f]">
-                <div className="max-w-7xl px-5 pt-14 pb-28 md:pt-20 md:pb-32 mx-auto flex flex-col md:flex-row gap-10 md:gap-3 lg:gap-10 xl:gap-28">
+            <div className="bg-slate-900">
+                <h1 className="max-w-7xl px-8 md:px-9 lg:px-5 mx-auto pt-16 lg:pt-20 font-extrabold text-6xl sm:text-7xl text-[#eaf2fa] tracking-tighter">
+                    contact.
+                </h1>
+                <div className="max-w-7xl px-8 md:px-9 lg:px-5 pt-8 pb-24 lg:pb-28 mx-auto flex flex-col md:flex-row gap-10 md:gap-3 lg:gap-10 xl:gap-28">
                     <div className="flex flex-col flex-1 gap-5">
                         <h1 className="font-bold text-3xl text-[#eaf2fa]">
                             Get in touch
                         </h1>
-                        <p className="text-[#eaf2fa] text-base xl:text-lg font-normal">
+                        <p className="text-[#eaf2fa] text-lg font-normal max-w-full md:max-w-xs lg:max-w-full">
                             It's my pleasure to be part of your team and have
                             enhanced knowledge in coding.
                         </p>
-                        <div className="flex flex-col gap-5 text-[#eaf2fa] text-base xl:text-lg font-medium mt-3">
+                        <div className="flex flex-col gap-5 text-[#eaf2fa] text-lg font-medium mt-3">
                             <a
                                 className="flex items-center gap-2"
                                 href="mailto:traxxjester25@gmail.com"
@@ -70,7 +73,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-sm text-[#eaf2fa]"
+                                    className="px-1 text-md text-[#eaf2fa]"
                                 >
                                     Name
                                 </label>
@@ -84,7 +87,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-sm text-[#eaf2fa]"
+                                    className="px-1 text-md text-[#eaf2fa]"
                                 >
                                     Email
                                 </label>
@@ -98,7 +101,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-sm text-[#eaf2fa]"
+                                    className="px-1 text-md text-[#eaf2fa]"
                                 >
                                     Message
                                 </label>
@@ -111,7 +114,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <button
-                            className="bg-[#A7C7E7] text-sky-950 py-3 rounded-md text-lg font-semibold hover:bg-opacity-80 duration-300 mt-1"
+                            className="bg-[#A7C7E7] text-slate-700 py-3 rounded-md text-lg font-semibold hover:bg-opacity-80 duration-300 mt-1"
                             disabled={loading}
                         >
                             {loading ? 'Sending...' : 'Send'}
@@ -119,11 +122,11 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center py-3 gap-1 bg-[#06223f] border-t border-[#eaf2fa]">
-                <p className="text-[#eaf2fa] text-sm font-normal">
+            <div className="flex flex-col justify-center items-center py-3 gap-1 bg-slate-900 border-t border-slate-500">
+                <p className="text-[#eaf2fa] text-md font-normal">
                     Teejay Villaluz
                 </p>
-                <div className="flex justify-center items-center gap-1 text-[#eaf2fa] text-sm font-normal">
+                <div className="flex justify-center items-center gap-1 text-[#eaf2fa] text-md font-normal">
                     <FaRegCopyright />
                     <span>All CopyRights Reserved 2024</span>
                 </div>
