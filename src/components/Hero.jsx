@@ -1,4 +1,4 @@
-import tjImage from '../assets/tjImage5.png';
+import tjImage from '../assets/tjImage3.png';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
