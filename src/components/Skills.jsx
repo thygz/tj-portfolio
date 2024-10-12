@@ -96,7 +96,7 @@ const Skills = () => {
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
-                            className={`font-semibold text-xl lg:text-lg ${
+                            className={`font-medium text-xl lg:text-lg ${
                                 skills === services
                                     ? 'text-slate-700 underline underline-offset-8 decoration-2'
                                     : 'text-slate-500 hover:text-slate-700 duration-500'
@@ -121,10 +121,10 @@ const Skills = () => {
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-semibold text-slate-700">
+                                        <h1 className="text-xl lg:text-lg font-medium text-slate-700">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-1 text-lg lg:text-base text-slate-700 font-light">
+                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-slate-700 font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -148,10 +148,10 @@ const Skills = () => {
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-semibold text-slate-700">
+                                        <h1 className="text-xl lg:text-lg font-medium text-slate-700">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-1 text-lg lg:text-base text-slate-700 font-light">
+                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-slate-700 font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>

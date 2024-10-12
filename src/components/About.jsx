@@ -1,4 +1,4 @@
-import tjImage5 from '../assets/tjImage7.png';
+import tjImage5 from '../assets/tjImage4.png';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -87,8 +87,8 @@ const About = () => {
             </div>
             <div className="w-full bg-[#A7C7E7] bg-opacity-60 mt-[4.5rem] py-16 md:py-8 lg:py-16">
                 <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col md:flex-row gap-10 md:gap-28 lg:gap-44 xl:gap-56 md:justify-center md:items-center">
-                    <div className="flex flex-col gap-4 flex-1">
-                        <h1 className="font-bold text-3xl sm:text-2xl lg:text-3xl text-slate-700">
+                    <div className="flex flex-col gap-3 flex-1">
+                        <h1 className="font-bold text-4xl sm:text-3xl lg:text-4xl text-slate-700 tracking-tighter">
                             Tech Stacks
                         </h1>
                         <p className="text-xl sm:text-lg lg:text-xl text-slate-700 font-normal text-opacity-80">
