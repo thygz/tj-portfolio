@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 const App = () => {
     return (
-        <div className="bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+        <div className="bg-[#f6f5f5] bg-[radial-gradient(#a7c7e7_1px,transparent_1px)] [background-size:16px_16px]">
             <BrowserRouter>
                 <Headers />
                 <Routes>

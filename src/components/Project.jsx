@@ -17,7 +17,7 @@ const Project = () => {
             <h1 className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10 font-extrabold text-6xl sm:text-7xl text-slate-700 mb-10 tracking-tighter">
                 projects.
             </h1>
-            <div className="border-t-2 border-b border-[#eaf2fa]">
+            <div className="border-t-2 border-b">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
                         <h1 className="text-slate-700 text-3xl font-normal tracking-tight">
@@ -87,7 +87,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-b border-[#eaf2fa]">
+            <div className="border-t border-b">
                 <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tl-2xl md:rounded-bl-2xl h-[28rem] lg:h-[29rem]">
                         <Link
@@ -157,7 +157,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-b-2 border-[#eaf2fa]">
+            <div className="border-t border-b-2">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
                         <h1 className="text-slate-700 text-3xl font-normal tracking-tight">

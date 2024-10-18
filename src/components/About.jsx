@@ -85,7 +85,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full bg-[#A7C7E7] bg-opacity-60 mt-[4.5rem] py-16 md:py-8 lg:py-16">
+            <div className="w-full mt-[4.5rem] py-16 md:py-8 lg:py-16 border">
                 <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col md:flex-row gap-10 md:gap-28 lg:gap-44 xl:gap-56 md:justify-center md:items-center">
                     <div className="flex flex-col gap-3 flex-1">
                         <h1 className="font-bold text-4xl sm:text-3xl lg:text-4xl text-slate-700 tracking-tighter">
@@ -96,18 +96,18 @@ const About = () => {
                         </p>
                     </div>
                     <div className="flex flex-1 justify-center items-center flex-wrap gap-x-[4.5rem] min-[410px]:gap-x-20 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-4 lg:gap-y-16 xl:gap-y-16 text-5xl">
-                        <FaHtml5 className="text-[#e34c26] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaCss3Alt className="text-[#264de4] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoJavascript className="text-[#f0db4f] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaBootstrap className="text-[#563d7c] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMongodb className="text-[#4db33d] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaReact className="text-[#61dbfb] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoNodejs className="text-[#3c873a] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <RiTailwindCssFill className="text-[#4c1d95] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <BiLogoTypescript className="text-[#3178c6] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiPostman className="text-[#ef5b25] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiInsomnia className="text-[#73177e] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMysql className="text-[#00758f] bg-[#eaf2fa] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaHtml5 className="text-[#e34c26] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaCss3Alt className="text-[#264de4] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoJavascript className="text-[#f0db4f] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaBootstrap className="text-[#563d7c] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMongodb className="text-[#4db33d] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaReact className="text-[#61dbfb] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoNodejs className="text-[#3c873a] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <RiTailwindCssFill className="text-[#4c1d95] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <BiLogoTypescript className="text-[#3178c6] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiPostman className="text-[#ef5b25] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiInsomnia className="text-[#73177e] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMysql className="text-[#00758f] shadow-md shadow-slate-400 w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <section
-            className="lg:bg-background2 bg-center bg-cover bg-no-repeat -mt-20 pt-20"
+            className="sm:bg-background2 bg-center bg-cover bg-no-repeat -mt-20 pt-20"
             id="hero"
         >
             <div className="max-w-7xl mx-auto flex gap-3 min-[400px]:gap-6 md:gap-14 lg:gap-10 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center lg:px-5 pb-16 sm:pb-16 lg:pb-0 pt-8 xl:pt-0 relative">
@@ -30,12 +30,12 @@ const Hero = () => {
                     </p>
                     <div className="flex flex-col min-[550px]:flex-row gap-3 sm:gap-5 mt-10 lg:mt-7">
                         <Link to="about" smooth={true} duration={700}>
-                            <button className="w-full min-[550px]:w-48 lg:w-44 xl:w-48 py-3 rounded-full bg-slate-700 border border-slate-700 text-white text-lg lg:text-base font-semibold hover:bg-white hover:text-slate-700 hover:border-slate-700 duration-150">
+                            <button className="w-full min-[550px]:w-48 lg:w-44 xl:w-48 py-3 rounded-full bg-slate-700 border border-slate-700 text-white text-lg lg:text-base font-semibold hover:bg-[#f6f5f5] hover:text-slate-700 hover:border-slate-700 duration-150">
                                 Know me better
                             </button>
                         </Link>
                         <Link to="projects" smooth={true} duration={1000}>
-                            <button className="w-full min-[550px]:w-48 lg:w-44 xl:w-48 py-3 rounded-full bg-white border border-slate-700 text-slate-700 text-lg lg:text-base font-semibold hover:bg-slate-700 hover:text-white hover:border-slate-700 duration-150">
+                            <button className="w-full min-[550px]:w-48 lg:w-44 xl:w-48 py-3 rounded-full bg-[#f6f5f5] border border-slate-700 text-slate-700 text-lg lg:text-base font-semibold hover:bg-slate-700 hover:text-white hover:border-slate-700 duration-150">
                                 Look what I can do
                             </button>
                         </Link>

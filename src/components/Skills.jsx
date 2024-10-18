@@ -87,19 +87,19 @@ const Skills = () => {
     ];
 
     return (
-        <section className="pt-20 pb-28 bg-[#A7C7E7] bg-opacity-60" id="skills">
+        <section className="border pt-20 pb-28" id="skills">
             <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10">
                 <h1 className="text-6xl sm:text-7xl font-extrabold text-slate-700 tracking-tighter">
                     services.
                 </h1>
-                <div className="flex gap-5 mt-6">
+                <div className="flex gap-5 mt-10">
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
-                            className={`font-medium text-xl lg:text-lg ${
+                            className={`font-medium text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-slate-700 underline underline-offset-8 decoration-2'
-                                    : 'text-slate-500 hover:text-slate-700 duration-500'
+                                    ? 'text-white bg-slate-600 py-1 w-[8.5rem] lg:w-32 rounded-full'
+                                    : 'text-white bg-slate-400 rounded-full hover:bg-slate-500 py-1 w-36 lg:w-32 duration-500'
                             }`}
                             onClick={() => setServices(skills)}
                         >
@@ -114,7 +114,7 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-white border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-[#f7f7f8] border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
@@ -129,7 +129,7 @@ const Skills = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-[#A7C7E7] rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
+                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-slate-600 rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
                             </div>
                         ))}
                     </div>
@@ -141,7 +141,7 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-white border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 bg-[#f7f7f8] border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
@@ -156,7 +156,7 @@ const Skills = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-[#A7C7E7] rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
+                                <div className="absolute w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 bg-slate-600 rounded-xl rotate-3 bottom-0 left-0 z-0 group-hover:rotate-0 duration-300"></div>
                             </div>
                         ))}
                     </div>

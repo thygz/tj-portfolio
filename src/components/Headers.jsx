@@ -72,14 +72,14 @@ const Headers = () => {
     return (
         <header
             className={`top-0 z-40 ${
-                scrolled ? 'sticky bg-slate-50 shadow-md' : 'static'
+                scrolled ? 'sticky bg-[#A7C7E7] bg-opacity-90' : 'static'
             }`}
         >
             <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="max-w-7xl mx-auto flex justify-between items-center py-2 xl:py-2.5 px-5 md:px-9 lg:px-5 z-50"
+                className="max-w-7xl mx-auto flex justify-between items-center py-3 px-5 md:px-9 lg:px-5 z-50"
             >
                 <img
                     src={logo}
