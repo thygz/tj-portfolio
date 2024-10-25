@@ -10,7 +10,7 @@ const Hero = () => {
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.2, delay: 1.5 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     className="lg:max-w-5xl mx-auto flex flex-1 flex-col px-8 md:px-9 lg:px-2 mt-3 lg:mt-0 lg:pr-0 z-10"
                 >
                     <p className="text-[3.1rem] sm:text-7xl lg:text-6xl xl:text-7xl font-extrabold text-[#b6eada] tracking-tighter">
@@ -26,7 +26,7 @@ const Hero = () => {
                         the next level, get in touch with me. I'm here to build
                         amazing websites for you.
                     </p>
-                    <div className="flex flex-col min-[550px]:flex-row gap-3 sm:gap-5 mt-10 lg:mt-7">
+                    <div className="flex flex-col min-[550px]:flex-row gap-5 mt-10 lg:mt-7">
                         <Link to="about" smooth={true} duration={700}>
                             <button className="w-full min-[550px]:w-48 lg:w-44 xl:w-48 py-3 rounded-full bg-[#b6eada] border border-[#b6eada] text-[#03001c] text-lg lg:text-base font-semibold hover:text-[#b6eada] hover:border-[#b6eada] hover:bg-transparent duration-150">
                                 Know me better
@@ -42,7 +42,7 @@ const Hero = () => {
                 <motion.img
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.2, delay: 1.5 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     src={tjImage}
                     alt="tj-image"
                     className="w-[19rem] min-[380px]:w-[21rem] min-[400px]:w-[23rem] sm:w-[34rem] lg:w-[33rem] xl:w-[40rem] hidden lg:block z-10"

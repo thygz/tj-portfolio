@@ -6,7 +6,6 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { IoIosClose } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 const Headers = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -68,12 +67,7 @@ const Headers = () => {
                     : 'static py-3 lg:py-3'
             } ${toggleMenu && 'bg-transparent'}`}
         >
-            <motion.div
-                initial={{ y: 0, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-9 lg:px-5 z-50"
-            >
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-9 lg:px-5 z-50">
                 <img
                     src={logo}
                     alt="logo"
@@ -199,7 +193,7 @@ const Headers = () => {
                     }`}
                     onClick={() => setToggleMenu(true)}
                 />
-            </motion.div>
+            </div>
             <div
                 onClick={() => setToggleMenu(false)}
                 className={`fixed bg-transparent z-50 top-0 left-0 right-0 bottom-0 ${
