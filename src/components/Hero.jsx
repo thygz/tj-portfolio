@@ -10,7 +10,7 @@ const Hero = () => {
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 1, delay: 1 }}
                     className="lg:max-w-5xl mx-auto flex flex-1 flex-col px-8 md:px-9 lg:px-2 mt-3 lg:mt-0 lg:pr-0 z-10"
                 >
                     <p className="text-[3.1rem] sm:text-7xl lg:text-6xl xl:text-7xl font-extrabold text-[#b6eada] tracking-tighter">
@@ -42,7 +42,7 @@ const Hero = () => {
                 <motion.img
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 1, delay: 1 }}
                     src={tjImage}
                     alt="tj-image"
                     className="w-[19rem] min-[380px]:w-[21rem] min-[400px]:w-[23rem] sm:w-[34rem] lg:w-[33rem] xl:w-[40rem] hidden lg:block z-10"
@@ -50,7 +50,7 @@ const Hero = () => {
                 <motion.img
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 1.5 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                     src={tjImage2}
                     alt="tj-image2"
                     className="w-[19rem] min-[380px]:w-[21rem] min-[400px]:w-[23rem] sm:w-[27rem] min-[900px]:w-[30rem] visible lg:hidden z-10"
