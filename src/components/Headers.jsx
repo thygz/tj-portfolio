@@ -1,10 +1,8 @@
-import { BiSolidUser } from 'react-icons/bi';
-import { SiAboutdotme } from 'react-icons/si';
-import { SiSkillshare } from 'react-icons/si';
-import { LiaProjectDiagramSolid } from 'react-icons/lia';
-import { MdEmail } from 'react-icons/md';
 import logo from '../assets/logo1.png';
-import { CgMenuGridO } from 'react-icons/cg';
+import { IoMenu } from 'react-icons/io5';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa6';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { IoIosClose } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -62,121 +60,145 @@ const Headers = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const scrollToContact = () => {
-        const element = document.getElementById('contact');
-        element.scrollIntoView({
-            behavior: 'smooth',
-        });
-    };
-
     return (
         <header
             className={`top-0 z-40 ${
-                scrolled ? 'sticky bg-[#A7C7E7] bg-opacity-90' : 'static'
-            }`}
+                scrolled
+                    ? 'sticky bg-[#301e67] shadow-sm shadow-[#5b8fb9] py-1.5 lg:py-3'
+                    : 'static py-3 lg:py-3'
+            } ${toggleMenu && 'bg-transparent'}`}
         >
             <motion.div
-                initial={{ y: -100, opacity: 0 }}
+                initial={{ y: 0, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="max-w-7xl mx-auto flex justify-between items-center py-3 px-5 md:px-9 lg:px-5 z-50"
+                className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-9 lg:px-5 z-50"
             >
                 <img
                     src={logo}
                     alt="logo"
-                    className="w-12 xl:w-14 cursor-pointer"
+                    className={`w-[4.5rem] lg:w-[5.5rem] xl:w-24 cursor-pointer ${
+                        toggleMenu ? 'opacity-0' : 'opacity-100'
+                    }`}
                     onClick={() => scrollToTop()}
                 />
-                <ul
-                    className={`flex gap-1 min-[900px]:gap-7 lg:gap-10 flex-col min-[900px]:flex-row justify-center items-center fixed top-20 min-[900px]:static cursor-pointer z-[100] transition-all duration-300 ease-in-out ${
-                        toggleMenu ? 'right-3 md:right-7' : '-right-20'
+                <div
+                    className={`flex flex-col min-[900px]:flex-row gap-5 min-[900px]:gap-20 pt-[4.5rem] min-[900px]:pt-0 pb-[1rem] min-[900px]:pb-0 w-full min-[900px]:w-auto bg-[#301e67] min-[900px]:bg-transparent fixed left-0 right-0 min-[900px]:static cursor-pointer z-[100] transition-all duration-300 ease-in-out ${
+                        toggleMenu ? 'top-0' : '-top-full'
                     }`}
                 >
-                    <li
-                        onClick={() => {
-                            scrollToSection('hero');
-                            scrollToTop();
-                        }}
+                    <ul
+                        className={`flex text-2xl min-[900px]:text-lg font-light min-[900px]:gap-7 lg:gap-10 flex-col min-[900px]:flex-row justify-center items-center`}
                     >
-                        <Link to="/">
-                            <BiSolidUser
-                                className={`text-3xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.55rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
-                                    activeLink === 'hero'
-                                        ? 'text-white bg-slate-700'
-                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
-                                }`}
-                                onClick={() => setToggleMenu(false)}
-                            />
-                        </Link>
-                    </li>
-                    <li onClick={() => scrollToSection('skills')}>
-                        <Link to="/">
-                            <SiSkillshare
-                                className={`text-4xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-2 min-[900px]:p-1.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
-                                    activeLink === 'skills'
-                                        ? 'text-white bg-slate-700'
-                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
-                                }`}
-                                onClick={() => setToggleMenu(false)}
-                            />
-                        </Link>
-                    </li>
-                    <li onClick={() => scrollToSection('about')}>
-                        <Link to="/">
-                            <SiAboutdotme
-                                className={`text-3xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.65rem] min-[900px]:p-2 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
-                                    activeLink === 'about'
-                                        ? 'text-white bg-slate-700'
-                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
-                                }`}
-                                onClick={() => setToggleMenu(false)}
-                            />
-                        </Link>
-                    </li>
-                    <li onClick={() => scrollToSection('projects')}>
-                        <Link to="/">
-                            <LiaProjectDiagramSolid
-                                className={`text-lg w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-[0.9rem] min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
-                                    activeLink === 'projects'
-                                        ? 'text-white bg-slate-700'
-                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
-                                }`}
-                                onClick={() => setToggleMenu(false)}
-                            />
-                        </Link>
-                    </li>
-                    <li onClick={() => scrollToSection('contact')}>
-                        <Link to="/">
-                            <MdEmail
-                                className={`text-2xl w-14 min-[900px]:w-10 h-14 min-[900px]:h-10 p-3 min-[900px]:p-2.5 border-2 border-slate-700 min-[900px]:border-none rounded-xl min-[900px]:rounded-full ${
-                                    activeLink === 'contact'
-                                        ? 'text-white bg-slate-700'
-                                        : 'text-slate-700 bg-slate-50 min-[900px]:bg-transparent hover:bg-slate-300 duration-300'
-                                }`}
-                                onClick={() => setToggleMenu(false)}
-                            />
-                        </Link>
-                    </li>
-                </ul>
-                <div className="flex justify-center items-center gap-3">
-                    <button
-                        className="hidden min-[900px]:flex justify-center items-center bg-slate-700 shadow-md px-4 py-3 rounded-full text-white text-sm sm:text-base font-semibold hover:bg-opacity-85 duration-300 active:-translate-y-5 cursor-pointer z-10"
-                        onClick={() => scrollToContact()}
-                    >
-                        Contact Me
-                    </button>
-                    {toggleMenu ? (
-                        <IoIosClose
-                            className="text-4xl text-slate-700 z-10 cursor-pointer min-[900px]:hidden"
+                        <li
+                            onClick={() => {
+                                scrollToSection('hero');
+                                scrollToTop();
+                                setToggleMenu(false);
+                            }}
+                            className={`py-4 min-[900px]:py-0 border-t-2 border-b border-opacity-20 border-[#5b8fb9] min-[900px]:border-0 w-full min-[900px]:w-auto text-center ${
+                                activeLink === 'hero'
+                                    ? 'text-[#03001c] min-[900px]:text-[#b6eada] bg-[#5b8fb9] min-[900px]:bg-transparent'
+                                    : 'text-[#5b8fb9] font-normal hover:text-[#b6eada]'
+                            }`}
+                        >
+                            <Link to="/">home</Link>
+                        </li>
+                        <li
+                            onClick={() => {
+                                scrollToSection('skills');
+                                setToggleMenu(false);
+                            }}
+                            className={`py-4 min-[900px]:py-0 border-t border-b border-opacity-20 border-[#5b8fb9] min-[900px]:border-0 w-full min-[900px]:w-auto text-center ${
+                                activeLink === 'skills'
+                                    ? 'text-[#03001c] min-[900px]:text-[#b6eada] bg-[#5b8fb9] min-[900px]:bg-transparent'
+                                    : 'text-[#5b8fb9] font-normal hover:text-[#b6eada]'
+                            }`}
+                        >
+                            <Link to="/">services</Link>
+                        </li>
+                        <li
+                            onClick={() => {
+                                scrollToSection('about');
+                                setToggleMenu(false);
+                            }}
+                            className={`py-4 min-[900px]:py-0 border-t border-b border-opacity-20 border-[#5b8fb9] min-[900px]:border-0 w-full min-[900px]:w-auto text-center ${
+                                activeLink === 'about'
+                                    ? 'text-[#03001c] min-[900px]:text-[#b6eada] bg-[#5b8fb9] min-[900px]:bg-transparent'
+                                    : 'text-[#5b8fb9] font-normal hover:text-[#b6eada]'
+                            }`}
+                        >
+                            <Link to="/">about</Link>
+                        </li>
+                        <li
+                            onClick={() => {
+                                scrollToSection('projects');
+                                setToggleMenu(false);
+                            }}
+                            className={`py-4 min-[900px]:py-0 border-t border-b border-opacity-20 border-[#5b8fb9] min-[900px]:border-0 w-full min-[900px]:w-auto text-center ${
+                                activeLink === 'projects'
+                                    ? 'text-[#03001c] min-[900px]:text-[#b6eada] bg-[#5b8fb9] min-[900px]:bg-transparent'
+                                    : 'text-[#5b8fb9] font-normal hover:text-[#b6eada]'
+                            }`}
+                        >
+                            <Link to="/">projects</Link>
+                        </li>
+                        <li
+                            onClick={() => {
+                                scrollToSection('contact');
+                                setToggleMenu(false);
+                            }}
+                            className={`py-4 min-[900px]:py-0 border-t border-b-2 border-opacity-20 border-[#5b8fb9] min-[900px]:border-0 w-full min-[900px]:w-auto text-center ${
+                                activeLink === 'contact'
+                                    ? 'text-[#03001c] min-[900px]:text-[#b6eada] bg-[#5b8fb9] min-[900px]:bg-transparent'
+                                    : 'text-[#5b8fb9] font-normal hover:text-[#b6eada]'
+                            }`}
+                        >
+                            <Link to="/">contact</Link>
+                        </li>
+                    </ul>
+                    <div className="flex justify-center items-center gap-10">
+                        <a
+                            href="https://www.facebook.com/tj.villaluz.3/"
+                            target="_blank"
                             onClick={() => setToggleMenu(false)}
-                        />
-                    ) : (
-                        <CgMenuGridO
-                            className="text-[2.6rem] text-slate-700 z-10 cursor-pointer min-[900px]:hidden"
-                            onClick={() => setToggleMenu(true)}
-                        />
-                    )}
+                        >
+                            <FaFacebookF className="text-3xl text-[#5b8fb9] hover:text-[#b6eada] cursor-pointer" />
+                        </a>
+                        <a
+                            href="https://github.com/thygz"
+                            target="_blank"
+                            onClick={() => setToggleMenu(false)}
+                        >
+                            <FaGithub className="text-3xl text-[#5b8fb9] hover:text-[#b6eada] cursor-pointer" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/teejay-villaluz-1a3248328/"
+                            target="_blank"
+                            onClick={() => setToggleMenu(false)}
+                        >
+                            <FaLinkedinIn className="text-3xl text-[#5b8fb9] hover:text-[#b6eada] cursor-pointer" />
+                        </a>
+                    </div>
+                    <img
+                        src={logo}
+                        alt="logo"
+                        className="w-[4.5rem] cursor-pointer min-[900px]:hidden absolute top-3 left-5"
+                        onClick={() => scrollToTop()}
+                    />
+                    <IoIosClose
+                        className={`text-[2.7rem] text-[#b6eada] z-[100] cursor-pointer min-[900px]:hidden absolute top-3 right-5 ${
+                            toggleMenu ? 'visible' : 'hidden'
+                        }`}
+                        onClick={() => setToggleMenu(false)}
+                    />
                 </div>
+                <IoMenu
+                    className={`text-[2.4rem] text-[#b6eada] z-10 cursor-pointer min-[900px]:hidden ${
+                        toggleMenu ? 'opacity-0' : 'opacity-100'
+                    }`}
+                    onClick={() => setToggleMenu(true)}
+                />
             </motion.div>
             <div
                 onClick={() => setToggleMenu(false)}
@@ -186,6 +208,11 @@ const Headers = () => {
                         : 'opacity-0 pointer-events-none'
                 }`}
             ></div>
+            <div className="hidden">
+                {toggleMenu
+                    ? (document.body.style.overflow = 'hidden')
+                    : (document.body.style.overflow = 'visible')}
+            </div>
         </header>
     );
 };

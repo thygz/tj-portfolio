@@ -7,37 +7,36 @@ import traxxDeploy4 from '../assets/projectImage/TraxxDeploy4.png';
 import UsedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
 import UsedCarsTraxx3 from '../assets/projectImage/UsedCarsTraxx3.png';
 import UsedCarsTraxx4 from '../assets/projectImage/UsedCarsTraxx4.png';
-import { FaArrowRight } from 'react-icons/fa6';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
-        <section className="pt-28" id="projects">
-            <h1 className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10 font-extrabold text-6xl sm:text-7xl text-slate-700 mb-10 tracking-tighter">
+        <section className="mt-20" id="projects">
+            <h1 className="max-w-7xl mx-auto pt-28 px-8 md:px-9 lg:px-5 xl:px-10 font-extrabold text-6xl sm:text-7xl text-[#b6eada] mb-10 tracking-tighter">
                 projects.
             </h1>
-            <div className="border-t-2 border-b">
+            <div className="border-t-2 border-b border-[#5b8fb9] border-opacity-30">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-slate-700 text-3xl font-normal tracking-tight">
+                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
                             TraxxRecipe
                         </h1>
                         <div>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
                                 A recipe website where you may see random
                                 recipes, search recipes by ingredients, save
                                 your favorite meal and more. In addition to
                                 reading the instructions, you can view the
                                 provided video while cooking.
                             </p>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light mt-2">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
                                 In this project, I learned how to use API and
                                 integrate it on a website. I used async await
                                 and sometimes .then when fetching data.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal">
+                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal">
                             HTML, CSS & Javascript with API
                         </h5>
                         <Link
@@ -45,10 +44,10 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
                                 Live
                             </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
                                 <FaArrowUpRightFromSquare className="text-white text-sm" />
                             </div>
                         </Link>
@@ -87,7 +86,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-b">
+            <div className="border-t border-b border-[#5b8fb9] border-opacity-30">
                 <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tl-2xl md:rounded-bl-2xl h-[28rem] lg:h-[29rem]">
                         <Link
@@ -122,16 +121,16 @@ const Project = () => {
                         </Link>
                     </div>
                     <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-slate-700 text-3xl font-normal tracking-tight">
+                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
                             TraxxDeploy
                         </h1>
                         <div>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
                                 A static website about webb apps deployment
                                 platforms from large scale enterprise APIs to
                                 static websites for individuals.
                             </p>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light mt-2">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
                                 Originally this website coded using HTML, CSS
                                 and JS. I converted the code to practice
                                 ReactJS, and this is the result. This is my
@@ -139,7 +138,7 @@ const Project = () => {
                                 JSX and how single-page application works.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal">
+                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal">
                             ReactJS
                         </h5>
                         <Link
@@ -147,31 +146,31 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
                                 Live
                             </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
                                 <FaArrowUpRightFromSquare className="text-white text-sm" />
                             </div>
                         </Link>
                     </div>
                 </div>
             </div>
-            <div className="border-t border-b-2">
+            <div className="border-t border-b-2 border-[#5b8fb9] border-opacity-30">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
                     <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-slate-700 text-3xl font-normal tracking-tight">
+                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
                             UsedCarsTraxx
                         </h1>
                         <div>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
                                 Car buy and sell website. The user should be
                                 logged-in, to be able to use all features,
                                 including buying and selling a car, picking
                                 favorites, editing profiles and vehicles for
                                 sale, searching and filtering cars etc.
                             </p>
-                            <p className="text-slate-700 text-[1.25rem] lg:text-lg font-light mt-2">
+                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
                                 I learned many things while doing this project.
                                 How to make and manipulate databases. How to
                                 authenticate users and form validations, handle
@@ -179,7 +178,7 @@ const Project = () => {
                                 hooks etc.
                             </p>
                         </div>
-                        <h5 className="text-slate-700 text-[1.25rem] lg:text-lg font-normal text-opacity-80">
+                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal text-opacity-80">
                             ReactJS, MongoDB, Express, NodeJS, Tailwind
                         </h5>
                         <Link
@@ -187,10 +186,10 @@ const Project = () => {
                             target="_blank"
                             className="flex justify-start items-center gap-2 w-24 group"
                         >
-                            <p className="font-medium text-slate-700 text-2xl lg:text-xl">
+                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
                                 Live
                             </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#A7C7E7] to-slate-700">
+                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
                                 <FaArrowUpRightFromSquare className="text-white text-sm" />
                             </div>
                         </Link>
