@@ -98,8 +98,8 @@ const Skills = () => {
                             key={index}
                             className={`font-medium text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-[#b6eada] border border-[#b6eada] py-1 w-[8.5rem] lg:w-32 rounded-full'
-                                    : 'text-[#5b8fb9] hover:border hover:rounded-full hover:border-[#5b8fb9] py-1 w-36 lg:w-32'
+                                    ? 'text-[#b6eada] border border-[#5b8fb9] py-1 w-[8.5rem] lg:w-32 rounded-sm'
+                                    : 'text-[#5b8fb9] border border-[#301e67] rounded-sm hover:text-[#b6eada] py-1 w-[8.5rem] lg:w-32'
                             }`}
                             onClick={() => setServices(skills)}
                         >
