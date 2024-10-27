@@ -87,19 +87,22 @@ const Skills = () => {
     ];
 
     return (
-        <section className="mt-0 pb-20" id="skills">
+        <section
+            className="py-20 lg:py-24 bg-[#fafafa] border-y-[3px] border-[#dddddd]"
+            id="skills"
+        >
             <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10">
-                <h1 className="pt-28 text-6xl sm:text-7xl font-extrabold text-[#b6eada] tracking-tighter">
-                    services.
+                <h1 className="text-6xl sm:text-7xl font-extrabold text-[#333333] tracking-tighter">
+                    services<span className="text-[#80beef]">.</span>
                 </h1>
-                <div className="flex gap-5 mt-10">
+                <div className="flex gap-3 mt-10">
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
                             className={`font-medium text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-[#b6eada] border border-[#5b8fb9] py-1 w-[8.5rem] lg:w-32 rounded-sm'
-                                    : 'text-[#5b8fb9] border border-[#301e67] rounded-sm hover:text-[#b6eada] py-1 w-[8.5rem] lg:w-32'
+                                    ? 'text-[#ffffff] bg-[#363636] py-1 w-[8.5rem] lg:w-32 rounded-md'
+                                    : 'text-[#ffffff] bg-[#959595] rounded-md hover:text-[#ffffff] hover:bg-[#363636] py-1 w-[8.5rem] lg:w-32'
                             }`}
                             onClick={() => setServices(skills)}
                         >
@@ -108,23 +111,23 @@ const Skills = () => {
                     ))}
                 </div>
                 {services === 'Coding Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-8">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-10">
                         {codingSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-md shadow-[#301e67] border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-medium text-[#b6eada]">
+                                        <h1 className="text-xl lg:text-lg font-medium text-[#333333]">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#5b8fb9] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -134,23 +137,23 @@ const Skills = () => {
                     </div>
                 )}
                 {services === 'Soft Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-8">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-10">
                         {softSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-md shadow-[#301e67] border border-slate-700 duration-300 rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-medium text-[#b6eada]">
+                                        <h1 className="text-xl lg:text-lg font-medium text-[#333333]">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#5b8fb9] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>

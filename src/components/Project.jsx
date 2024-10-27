@@ -1,232 +1,90 @@
-import traxxRecipe1 from '../assets/projectImage/TraxxRecipe1.jpg';
-import traxxRecipe3 from '../assets/projectImage/TraxxRecipe3.png';
-import traxxRecipe4 from '../assets/projectImage/TraxxRecipe4.png';
+import traxxRecipe1 from '../assets/projectImage/TraxxRecipe1.png';
 import traxxDeploy1 from '../assets/projectImage/TraxxDeploy1.png';
-import traxxDeploy3 from '../assets/projectImage/TraxxDeploy3.png';
-import traxxDeploy4 from '../assets/projectImage/TraxxDeploy4.png';
-import UsedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
-import UsedCarsTraxx3 from '../assets/projectImage/UsedCarsTraxx3.png';
-import UsedCarsTraxx4 from '../assets/projectImage/UsedCarsTraxx4.png';
+import usedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
+    const projectDetails = [
+        {
+            image: `${traxxRecipe1}`,
+            link: 'https://traxxrecipe.vercel.app/',
+            title: 'TraxxRecipe',
+            description1:
+                'A recipe website where you may see random recipes, search recipes by ingredients, save your favorite meal and more. In addition to reading the instructions, you can view the provided video while cooking.',
+            description2:
+                'In this project, I learned how to use API and integrate it on a website. I used async await and sometimes .then when fetching data.',
+            technologies: 'HTML, CSS & Javascript with API',
+        },
+        {
+            image: `${traxxDeploy1}`,
+            link: 'https://traxx-deploy.vercel.app/',
+            title: 'TraxxDeploy',
+            description1:
+                'A static website about webb apps deployment platforms from large scale enterprise APIs to static websites for individuals.',
+            description2: `Originally this website coded using HTML, CSS and JS. I converted the code to practice ReactJS, and this is the result. This is my first encounter with React JS and I'm amazed at JSX and how single-page application works.`,
+            technologies: 'ReactJS',
+        },
+        {
+            image: `${usedCarsTraxx1}`,
+            link: 'https://usedcarstraxx-mern.onrender.com',
+            title: 'UsedCarsTraxx',
+            description1:
+                'Car buy and sell website. The user should be logged-in, to be able to use all features, including buying and selling a car, picking favorites, editing profiles and vehicles for sale, searching and filtering cars etc.',
+            description2:
+                'I learned many things while doing this project. How to make and manipulate databases. How to authenticate users and form validations, handle errors, loading and success. The magic of react hooks etc.',
+            technologies: 'ReactJS, MongoDB, Express, NodeJS, Tailwind',
+        },
+    ];
+
     return (
-        <section className="mt-20" id="projects">
-            <h1 className="max-w-7xl mx-auto pt-28 px-8 md:px-9 lg:px-5 xl:px-10 font-extrabold text-6xl sm:text-7xl text-[#b6eada] mb-10 tracking-tighter">
-                projects.
+        <section className="" id="projects">
+            <h1 className="max-w-7xl mx-auto pt-20 md:pt-24 lg:pt-28 px-8 md:px-9 lg:px-5 xl:px-10 font-extrabold text-6xl sm:text-7xl text-[#333333] tracking-tighter">
+                projects<span className="text-[#80beef]">.</span>
             </h1>
-            <div className="border-t-2 border-b border-[#5b8fb9] border-opacity-30">
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
-                            TraxxRecipe
-                        </h1>
-                        <div>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
-                                A recipe website where you may see random
-                                recipes, search recipes by ingredients, save
-                                your favorite meal and more. In addition to
-                                reading the instructions, you can view the
-                                provided video while cooking.
-                            </p>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
-                                In this project, I learned how to use API and
-                                integrate it on a website. I used async await
-                                and sometimes .then when fetching data.
-                            </p>
-                        </div>
-                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal">
-                            HTML, CSS & Javascript with API
-                        </h5>
-                        <Link
-                            to="https://traxxrecipe.vercel.app/"
-                            target="_blank"
-                            className="flex justify-start items-center gap-2 w-24 group"
-                        >
-                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
-                                Live
-                            </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
-                                <FaArrowUpRightFromSquare className="text-white text-sm" />
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tr-2xl md:rounded-br-2xl h-[28rem] lg:h-[29rem]">
-                        <Link
-                            to="https://traxxrecipe.vercel.app/"
-                            target="_blank"
-                        >
+            <div className="">
+                {projectDetails.map((details, index) => (
+                    <div
+                        key={index}
+                        className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-16 lg:gap-5 xl:gap-16 items-center px-8 md:px-9 lg:px-5 xl:px-10 py-14 md:py-14 lg:py-20 border-b-4 border-[#fafafa]"
+                    >
+                        <Link to={details.link} target="_blank">
                             <img
-                                src={traxxRecipe1}
+                                src={details.image}
                                 alt="project image"
-                                className="absolute w-60 lg:w-64 xl:w-[17rem] inset-0 mx-auto my-auto border-2 border-teal-500 shadow-lg rounded z-30 hover:scale-105 duration-500"
+                                className="w-full sm:w-[37rem] md:w-[40rem] lg:w-[32rem] xl:w-[39rem]"
                             />
                         </Link>
-                        <Link
-                            to="https://traxxrecipe.vercel.app/"
-                            target="_blank"
-                        >
-                            <img
-                                src={traxxRecipe3}
-                                alt="image"
-                                className="absolute w-[17rem] lg:w-[20rem] xl:w-[22rem] top-[7.5rem] lg:top-[6.9rem] xl:top-[6.1rem] right-7 xl:right-12 border-2 border-teal-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                        <Link
-                            to="https://traxxrecipe.vercel.app/"
-                            target="_blank"
-                        >
-                            <img
-                                src={traxxRecipe4}
-                                alt="image"
-                                className="absolute w-44 lg:w-52 xl:w-56 inset-0 ml-7 xl:ml-12 my-auto border-2 border-teal-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            <div className="border-t border-b border-[#5b8fb9] border-opacity-30">
-                <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-0 md:gap-5 items-center">
-                    <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tl-2xl md:rounded-bl-2xl h-[28rem] lg:h-[29rem]">
-                        <Link
-                            to="https://traxx-deploy.vercel.app/"
-                            target="_blank"
-                        >
-                            <img
-                                src={traxxDeploy1}
-                                alt="project image"
-                                className="absolute w-[17.5rem] lg:w-[22rem] xl:w-[23rem] top-[7.4rem] lg:top-[6.3rem] xl:top-[6rem] right-7 xl:right-12 border border-blue-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                        <Link
-                            to="https://traxx-deploy.vercel.app/"
-                            target="_blank"
-                        >
-                            <img
-                                src={traxxDeploy3}
-                                alt="image"
-                                className="absolute w-60 lg:w-64 xl:w-[17rem] inset-0 mx-auto my-auto border border-blue-500 shadow-lg rounded z-10 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                        <Link
-                            to="https://traxx-deploy.vercel.app/"
-                            target="_blank"
-                        >
-                            <img
-                                src={traxxDeploy4}
-                                alt="image"
-                                className="absolute w-52 md:w-56 lg:w-[16rem] xl:w-[17rem] inset-0 ml-7 md:ml-5 xl:ml-12 my-auto border border-blue-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                    </div>
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
-                            TraxxDeploy
-                        </h1>
-                        <div>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
-                                A static website about webb apps deployment
-                                platforms from large scale enterprise APIs to
-                                static websites for individuals.
-                            </p>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
-                                Originally this website coded using HTML, CSS
-                                and JS. I converted the code to practice
-                                ReactJS, and this is the result. This is my
-                                first encounter with React JS and I'm amazed at
-                                JSX and how single-page application works.
-                            </p>
-                        </div>
-                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal">
-                            ReactJS
-                        </h5>
-                        <Link
-                            to="https://traxx-deploy.vercel.app/"
-                            target="_blank"
-                            className="flex justify-start items-center gap-2 w-24 group"
-                        >
-                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
-                                Live
-                            </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
-                                <FaArrowUpRightFromSquare className="text-white text-sm" />
+                        <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 pb-0">
+                            <h1 className="text-[#333333] text-3xl font-normal tracking-tight">
+                                {details.title}
+                            </h1>
+                            <div>
+                                <p className="text-[#333333] text-[1.25rem] lg:text-lg font-light">
+                                    {details.description1}
+                                </p>
+                                <p className="text-[#333333] text-[1.25rem] lg:text-lg font-light mt-2">
+                                    {details.description2}
+                                </p>
                             </div>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            <div className="border-t border-b-2 border-[#5b8fb9] border-opacity-30">
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-0 md:gap-5 items-center">
-                    <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 px-8 md:px-9 lg:px-5 xl:px-10 pb-0 pt-16 lg:pt-0">
-                        <h1 className="text-[#b6eada] text-3xl font-normal tracking-tight">
-                            UsedCarsTraxx
-                        </h1>
-                        <div>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light">
-                                Car buy and sell website. The user should be
-                                logged-in, to be able to use all features,
-                                including buying and selling a car, picking
-                                favorites, editing profiles and vehicles for
-                                sale, searching and filtering cars etc.
-                            </p>
-                            <p className="text-[#b6eada] text-[1.25rem] lg:text-lg font-light mt-2">
-                                I learned many things while doing this project.
-                                How to make and manipulate databases. How to
-                                authenticate users and form validations, handle
-                                errors, loading and success. The magic of react
-                                hooks etc.
-                            </p>
+                            <h5 className="text-[#333333] text-[1.25rem] lg:text-lg font-normal">
+                                {details.technologies}
+                            </h5>
+                            <Link
+                                to={details.link}
+                                target="_blank"
+                                className="flex justify-start items-center gap-2 w-24 group"
+                            >
+                                <p className="font-medium text-[#333333] text-2xl lg:text-xl">
+                                    Live
+                                </p>
+                                <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#80beef] to-[#333333]">
+                                    <FaArrowUpRightFromSquare className="text-white text-sm" />
+                                </div>
+                            </Link>
                         </div>
-                        <h5 className="text-[#5b8fb9] text-[1.25rem] lg:text-lg font-normal text-opacity-80">
-                            ReactJS, MongoDB, Express, NodeJS, Tailwind
-                        </h5>
-                        <Link
-                            to="https://usedcarstraxx-mern.onrender.com"
-                            target="_blank"
-                            className="flex justify-start items-center gap-2 w-24 group"
-                        >
-                            <p className="font-medium text-[#b6eada] text-2xl lg:text-xl">
-                                Live
-                            </p>
-                            <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#b6eada] to-[#301e67]">
-                                <FaArrowUpRightFromSquare className="text-white text-sm" />
-                            </div>
-                        </Link>
                     </div>
-                    <div className="flex relative w-full sm:w-[75%] min-[850px]:w-[60%] lg:w-[50%] overflow-hidden md:rounded-tr-2xl md:rounded-br-2xl h-[28rem] lg:h-[29rem]">
-                        <Link
-                            to="https://usedcarstraxx-mern.onrender.com"
-                            target="_blank"
-                        >
-                            <img
-                                src={UsedCarsTraxx1}
-                                alt="project image"
-                                className="absolute w-56 lg:w-[18rem] xl:w-[19rem] top-[7.5rem] lg:top-[5.8rem] xl:top-[5.6rem] right-7 xl:right-12 border border-cyan-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                        <Link
-                            to="https://usedcarstraxx-mern.onrender.com"
-                            target="_blank"
-                        >
-                            <img
-                                src={UsedCarsTraxx3}
-                                alt="image"
-                                className="absolute w-60 lg:w-64 xl:w-[17rem] inset-0 mx-auto my-auto border border-cyan-500 shadow-lg rounded z-10 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                        <Link
-                            to="https://usedcarstraxx-mern.onrender.com"
-                            target="_blank"
-                        >
-                            <img
-                                src={UsedCarsTraxx4}
-                                alt="image"
-                                className="absolute w-48 lg:w-60 xl:w-64 inset-0 ml-7 xl:ml-12 my-auto border border-cyan-500 shadow-2xl rounded z-0 hover:scale-105 duration-500"
-                            />
-                        </Link>
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
     );

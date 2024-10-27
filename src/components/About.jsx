@@ -16,17 +16,17 @@ import resume from '../assets/resume.pdf';
 const About = () => {
     return (
         <section className="" id="about">
-            <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14 xl:gap-36 py-20 xl:py-24">
+            <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col-reverse lg:flex-row justify-center items-center gap-5 lg:gap-14 xl:gap-36 py-[4.5rem] lg:py-20 xl:py-16">
                 <img
                     src={tjImage5}
                     alt="image"
-                    className="w-96 sm:w-[26rem] lg:w-[28rem] xl:w-[32rem] bg-inherit"
+                    className="w-full sm:w-[31rem] lg:w-[28rem] xl:w-[32rem] bg-inherit"
                 />
                 <div className="flex flex-col">
-                    <h1 className="font-extrabold text-6xl sm:text-7xl text-[#b6eada] tracking-tighter">
-                        about.
+                    <h1 className="font-extrabold text-6xl sm:text-7xl text-[#333333] tracking-tighter">
+                        about<span className="text-[#80beef]">.</span>
                     </h1>
-                    <p className="font-light mt-5 xl:mt-7 text-[#b6eada] text-[1.25rem] lg:text-lg">
+                    <p className="font-light mt-5 xl:mt-7 text-[#333333] text-[1.25rem] lg:text-lg">
                         Web development is quite new to me since I am a career
                         shifter. I worked as an equipment and process engineer
                         for the past 10 years. But web development has always
@@ -50,41 +50,48 @@ const About = () => {
                         . Aside from cars and playing guitar, looking out for
                         challenging projects to work on excites me.
                     </p>
-                    <p className="font-light mt-8 lg:mt-7 text-[#b6eada] text-[1.25rem] lg:text-lg">
+                    <p className="font-light mt-8 lg:mt-7 text-[#757575] text-[1.25rem] lg:text-lg">
                         My Mission: Make your products/services attractive to
                         clients and present your business in the most creative
                         way.
                     </p>
-                    <button className="w-full min-[550px]:w-44 lg:w-40 py-3 rounded-full border border-[#b6eada] bg-[#b6eada] text-[#03001c] text-lg lg:text-base font-bold hover:bg-opacity-85 duration-300 active:-translate-y-5 mt-8">
+                    <button className="w-full min-[550px]:w-44 lg:w-40 py-3 rounded-full border border-[#333333] bg-[#333333] text-[#ffffff] text-lg lg:text-base font-bold hover:bg-opacity-90 duration-300 active:-translate-y-5 mt-8">
                         <a href={resume} download="TJ_Resume">
                             Download CV
                         </a>
                     </button>
                 </div>
             </div>
-            <div className="w-full py-16 md:py-8 lg:py-16 bg-[#03001c] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
-                <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col md:flex-row gap-10 md:gap-28 lg:gap-44 xl:gap-56 md:justify-center md:items-center">
+            <div className="w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#fafafa] border-y-[3px] border-[#dddddd]">
+                <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-10 xl:px-20 flex flex-col lg:flex-row gap-20 md:gap-16 lg:gap-24 xl:gap-24 lg:justify-center lg:items-center">
                     <div className="flex flex-col gap-3 flex-1">
-                        <h1 className="font-bold text-4xl sm:text-3xl lg:text-4xl text-[#b6eada] tracking-tighter">
+                        <h1 className="font-bold text-[2rem] sm:text-3xl lg:text-3xl text-[#333333] tracking-tight">
                             Tech Stacks
                         </h1>
-                        <p className="text-xl sm:text-lg lg:text-xl text-[#b6eada] font-normal text-opacity-80">
-                            Tools that I used when creating your desired website
+                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-light text-opacity-80 mt-3">
+                            These are the tools that I'm currenty using in
+                            building your desired websites. But I am also in the
+                            process of learning other technology stacks like
+                            PHP, Laravel, Python etc.
+                        </p>
+                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-light text-opacity-80">
+                            I keep on enhancing and developing my skills to be
+                            able to provide the best websites for you.
                         </p>
                     </div>
-                    <div className="flex flex-1 justify-center items-center flex-wrap gap-x-[4.5rem] min-[410px]:gap-x-20 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-4 lg:gap-y-16 xl:gap-y-16 text-5xl">
-                        <FaHtml5 className="text-[#e34c26] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaCss3Alt className="text-[#264de4] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoJavascript className="text-[#f0db4f] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaBootstrap className="text-[#563d7c] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMongodb className="text-[#4db33d] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaReact className="text-[#61dbfb] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoNodejs className="text-[#3c873a] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <RiTailwindCssFill className="text-[#4c1d95] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <BiLogoTypescript className="text-[#3178c6] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiPostman className="text-[#ef5b25] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiInsomnia className="text-[#73177e] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMysql className="text-[#00758f] shadow-md shadow-[#b6eada] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                    <div className="flex flex-1 justify-center items-center flex-wrap gap-x-[4.5rem] min-[410px]:gap-x-20 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-8 lg:gap-y-16 xl:gap-y-16 text-5xl lg:pl-20">
+                        <FaHtml5 className="text-[#e34c26] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaCss3Alt className="text-[#264de4] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoJavascript className="text-[#f0db4f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaBootstrap className="text-[#563d7c] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMongodb className="text-[#4db33d] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaReact className="text-[#61dbfb] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoNodejs className="text-[#3c873a] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <RiTailwindCssFill className="text-[#4c1d95] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <BiLogoTypescript className="text-[#3178c6] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiPostman className="text-[#ef5b25] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiInsomnia className="text-[#73177e] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMysql className="text-[#00758f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                     </div>
                 </div>
             </div>
