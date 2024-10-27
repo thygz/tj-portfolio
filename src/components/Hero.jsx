@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <section
-            className="-mt-20 pt-32 sm:pt-40 lg:pt-28 pb-0 lg:pb-16"
+            className="-mt-20 pt-32 sm:pt-40 lg:pt-28 pb-0 lg:pb-10"
             id="hero"
         >
             <div className="max-w-7xl mx-auto flex gap-14 lg:gap-10 xl:gap-5 flex-col lg:flex-row justify-center items-center lg:px-5 pb-16 sm:pb-16 lg:pb-0 relative">
