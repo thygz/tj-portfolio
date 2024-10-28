@@ -55,27 +55,27 @@ const Project = () => {
                                 className="w-full sm:w-[37rem] md:w-[40rem] lg:w-[32rem] xl:w-[39rem]"
                             />
                         </Link>
-                        <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 pb-0">
+                        <div className="flex flex-col flex-1 pb-0">
                             <h1 className="text-[#333333] text-[2.2rem] font-light tracking-tight">
                                 {details.title}
                             </h1>
-                            <div>
+                            <div className="mt-2">
                                 <p className="text-[#333333] text-[1.25rem] lg:text-lg font-light">
                                     {details.description1}
                                 </p>
-                                <p className="text-[#333333] text-[1.25rem] lg:text-lg font-light mt-2">
+                                <p className="text-[#333333] text-[1.25rem] lg:text-lg font-light mt-1">
                                     {details.description2}
                                 </p>
                             </div>
-                            <h5 className="text-[#333333] text-[1.25rem] lg:text-lg font-light">
+                            <h5 className="text-[#333333] text-[1.25rem] lg:text-lg font-light mt-5">
                                 {details.technologies}
                             </h5>
                             <Link
                                 to={details.link}
                                 target="_blank"
-                                className="flex justify-start items-center gap-2 w-24 group"
+                                className="flex justify-start items-center gap-2 w-24 group mt-2"
                             >
-                                <p className="font-normal text-[#333333] text-2xl lg:text-xl">
+                                <p className="font-normal text-[#333333] text-2xl lg:text-xl underline">
                                     Live
                                 </p>
                                 <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#80beef] to-[#333333]">
