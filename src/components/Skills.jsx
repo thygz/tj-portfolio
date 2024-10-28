@@ -65,7 +65,8 @@ const Skills = () => {
         {
             icon: `${collaboration}`,
             title: 'Collaboration',
-            description: 'Capable of working well with others',
+            description:
+                'Capable of working well with others to produce higher quality work',
         },
         {
             icon: `${adaptation}`,
@@ -95,14 +96,14 @@ const Skills = () => {
                 <h1 className="text-6xl sm:text-7xl font-extrabold text-[#333333] tracking-tighter">
                     services<span className="text-[#80beef]">.</span>
                 </h1>
-                <div className="flex gap-3 mt-10">
+                <div className="flex flex-wrap gap-3 mt-12 sm:mt-14 lg:mt-10">
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
                             className={`font-medium text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-[#ffffff] bg-[#363636] py-1 w-[8.5rem] lg:w-32 rounded-md'
-                                    : 'text-[#ffffff] bg-[#959595] rounded-md hover:text-[#ffffff] hover:bg-[#363636] py-1 w-[8.5rem] lg:w-32'
+                                    ? 'text-[#ffffff] bg-[#363636] py-1 w-[8.8rem] lg:w-32 rounded-full'
+                                    : 'text-[#ffffff] bg-[#959595] rounded-full hover:text-[#ffffff] hover:bg-[#757575] py-1 w-[8.8rem] lg:w-32'
                             }`}
                             onClick={() => setServices(skills)}
                         >
@@ -111,23 +112,23 @@ const Skills = () => {
                     ))}
                 </div>
                 {services === 'Coding Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-10">
+                    <div className="flex flex-wrap justify-center items-center gap-y-5 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
                         {codingSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-medium text-[#333333]">
+                                        <h1 className="text-xl lg:text-lg font-normal text-[#333333] mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-2 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -137,23 +138,23 @@ const Skills = () => {
                     </div>
                 )}
                 {services === 'Soft Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 min-[410px]:gap-y-10 min-[410px]:gap-x-6 lg:gap-y-16 lg:gap-x-6 xl:gap-x-14 mt-10">
+                    <div className="flex flex-wrap justify-center items-center gap-y-5 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
                         {softSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col justify-between p-3 min-[520px]:p-4 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] h-40 relative z-10">
+                                <div className="flex flex-col p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-medium text-[#333333]">
+                                        <h1 className="text-xl lg:text-lg font-normal text-[#333333] mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-1 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-2 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>

@@ -38,28 +38,28 @@ const Contact = () => {
                     contact<span className="text-[#80beef]">.</span>
                 </h1>
                 <div className="max-w-7xl px-8 md:px-9 lg:px-5 pt-8 pb-24 lg:pb-28 mx-auto flex flex-col md:flex-row gap-10 md:gap-3 lg:gap-10 xl:gap-28">
-                    <div className="flex flex-col flex-1 gap-5">
-                        <h1 className="font-bold text-3xl text-[#333333]">
+                    <div className="flex flex-col flex-1">
+                        <h1 className="font-semibold text-3xl text-[#333333]">
                             Get in touch
                         </h1>
-                        <p className="text-[#333333] text-lg font-normal max-w-full md:max-w-xs lg:max-w-full">
+                        <p className="text-[#333333] text-[1.25rem] font-light max-w-full md:max-w-xs lg:max-w-full mt-2">
                             It's my pleasure to be part of your team and have
                             enhanced knowledge in coding.
                         </p>
-                        <div className="flex flex-col gap-5 text-lg font-medium mt-3 text-[#333333]">
+                        <div className="flex flex-col gap-5 text-[1.25rem] font-light mt-8 text-[#333333]">
                             <a
                                 className="flex items-center gap-2"
                                 href="mailto:traxxjester25@gmail.com"
                             >
-                                <IoMdMail className="text-2xl" />{' '}
+                                <IoMdMail className="text-3xl" />{' '}
                                 traxxjester25@gmail.com
                             </a>
                             <span className="flex items-center gap-2">
-                                <FaPhoneAlt className="text-2xl" />{' '}
+                                <FaPhoneAlt className="text-3xl" />{' '}
                                 +639296051758
                             </span>
                             <span className="flex items-center gap-2">
-                                <FaLocationDot className="text-2xl" /> Timalan
+                                <FaLocationDot className="text-3xl" /> Timalan
                                 Concepcion, Naic Cavite
                             </span>
                         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-md text-[#333333]"
+                                    className="px-1 text-lg text-[#333333]"
                                 >
                                     Name
                                 </label>
@@ -87,7 +87,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-md text-[#333333]"
+                                    className="px-1 text-lg text-[#333333]"
                                 >
                                     Email
                                 </label>
@@ -101,7 +101,7 @@ const Contact = () => {
                             <div className="flex flex-col gap-1">
                                 <label
                                     htmlFor="name"
-                                    className="px-1 text-md text-[#333333]"
+                                    className="px-1 text-lg text-[#333333]"
                                 >
                                     Message
                                 </label>
@@ -123,10 +123,10 @@ const Contact = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center py-3 gap-1 bg-[#111111] bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_14px] border-opacity-20">
-                <p className="text-[#ffffff] text-md font-normal">
+                <p className="text-[#ffffff] text-md font-extralight">
                     Teejay Villaluz
                 </p>
-                <div className="flex justify-center items-center gap-1 text-[#ffffff] text-md font-normal">
+                <div className="flex justify-center items-center gap-1 text-[#ffffff] text-md font-extralight">
                     <FaRegCopyright />
                     <span>All CopyRights Reserved 2024</span>
                 </div>

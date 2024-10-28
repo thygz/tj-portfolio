@@ -65,33 +65,33 @@ const About = () => {
             <div className="w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#fafafa] border-y-[3px] border-[#dddddd]">
                 <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-10 xl:px-20 flex flex-col lg:flex-row gap-20 md:gap-16 lg:gap-24 xl:gap-24 lg:justify-center lg:items-center">
                     <div className="flex flex-col gap-3 flex-1">
-                        <h1 className="font-bold text-[2rem] sm:text-3xl lg:text-3xl text-[#333333] tracking-tight">
+                        <h1 className="font-semibold text-[2.2rem] sm:text-3xl lg:text-3xl text-[#333333] tracking-tight">
                             Tech Stacks
                         </h1>
-                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-light text-opacity-80 mt-3">
+                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-normal text-opacity-80 mt-3">
                             These are the tools that I'm currenty using in
                             building your desired websites. But I am also in the
                             process of learning other technology stacks like
                             PHP, Laravel, Python etc.
                         </p>
-                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-light text-opacity-80">
+                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-normal text-opacity-80">
                             I keep on enhancing and developing my skills to be
                             able to provide the best websites for you.
                         </p>
                     </div>
                     <div className="flex flex-1 justify-center items-center flex-wrap gap-x-[4.5rem] min-[410px]:gap-x-20 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-8 lg:gap-y-16 xl:gap-y-16 text-5xl lg:pl-20">
-                        <FaHtml5 className="text-[#e34c26] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaCss3Alt className="text-[#264de4] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoJavascript className="text-[#f0db4f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaBootstrap className="text-[#563d7c] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMongodb className="text-[#4db33d] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <FaReact className="text-[#61dbfb] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <IoLogoNodejs className="text-[#3c873a] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <RiTailwindCssFill className="text-[#4c1d95] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <BiLogoTypescript className="text-[#3178c6] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiPostman className="text-[#ef5b25] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiInsomnia className="text-[#73177e] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
-                        <SiMysql className="text-[#00758f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.1)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaHtml5 className="text-[#e34c26] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaCss3Alt className="text-[#264de4] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoJavascript className="text-[#f0db4f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaBootstrap className="text-[#563d7c] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMongodb className="text-[#4db33d] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <FaReact className="text-[#61dbfb] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <IoLogoNodejs className="text-[#3c873a] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <RiTailwindCssFill className="text-[#4c1d95] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <BiLogoTypescript className="text-[#3178c6] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiPostman className="text-[#ef5b25] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiInsomnia className="text-[#73177e] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
+                        <SiMysql className="text-[#00758f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                     </div>
                 </div>
             </div>

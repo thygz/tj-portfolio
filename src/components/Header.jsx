@@ -88,7 +88,11 @@ const Headers = () => {
                 <div
                     className={`flex flex-col min-[900px]:flex-row gap-5 min-[900px]:gap-16 pb-[1rem] min-[900px]:pb-0 w-full min-[900px]:w-auto bg-[#222222] min-[900px]:bg-transparent fixed left-0 right-0 min-[900px]:static cursor-pointer z-[100] transition-all duration-500 ease-in-out ${
                         toggleMenu
-                            ? `${scrolled ? 'top-[3.9rem]' : 'top-[4.3rem]'}`
+                            ? `${
+                                  scrolled
+                                      ? 'top-[3.8rem] min-[400px]:top-[3.9rem]'
+                                      : 'top-[4.2rem]'
+                              }`
                             : '-top-full'
                     }`}
                 >

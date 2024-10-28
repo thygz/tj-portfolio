@@ -8,14 +8,14 @@ const Hero = () => {
             className="-mt-20 pt-32 sm:pt-40 lg:pt-28 pb-0 lg:pb-10"
             id="hero"
         >
-            <div className="max-w-7xl mx-auto flex gap-14 lg:gap-10 xl:gap-5 flex-col lg:flex-row justify-center items-center lg:px-5 pb-16 sm:pb-16 lg:pb-0 relative">
+            <div className="max-w-7xl mx-auto flex gap-5 sm:gap-14 lg:gap-10 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center lg:px-5 pb-20 sm:pb-24 lg:pb-0 relative">
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="lg:max-w-5xl mx-auto flex flex-1 flex-col px-8 md:px-9 lg:px-2 mt-3 lg:mt-0 lg:pr-0 z-10"
                 >
-                    <p className="text-[3.1rem] sm:text-7xl lg:text-6xl xl:text-7xl font-extrabold text-[#333333] tracking-tighter">
+                    <p className="relative text-[3.1rem] sm:text-7xl lg:text-6xl xl:text-7xl font-extrabold text-[#333333] tracking-tighter">
                         Teejay Villaluz
                     </p>
                     <p className="text-[1.37rem] min-[410px]:text-[1.45rem] md:text-2xl lg:max-w-xl font-light text-[#757575] mt-2 sm:mt-4 lg:mt-3 xl:mt-5">

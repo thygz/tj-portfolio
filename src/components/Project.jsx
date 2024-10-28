@@ -56,7 +56,7 @@ const Project = () => {
                             />
                         </Link>
                         <div className="flex flex-col gap-5 sm:gap-6 lg:gap-5 flex-1 pb-0">
-                            <h1 className="text-[#333333] text-3xl font-normal tracking-tight">
+                            <h1 className="text-[#333333] text-[2.2rem] font-light tracking-tight">
                                 {details.title}
                             </h1>
                             <div>
@@ -67,7 +67,7 @@ const Project = () => {
                                     {details.description2}
                                 </p>
                             </div>
-                            <h5 className="text-[#333333] text-[1.25rem] lg:text-lg font-normal">
+                            <h5 className="text-[#333333] text-[1.25rem] lg:text-lg font-light">
                                 {details.technologies}
                             </h5>
                             <Link
@@ -75,7 +75,7 @@ const Project = () => {
                                 target="_blank"
                                 className="flex justify-start items-center gap-2 w-24 group"
                             >
-                                <p className="font-medium text-[#333333] text-2xl lg:text-xl">
+                                <p className="font-normal text-[#333333] text-2xl lg:text-xl">
                                     Live
                                 </p>
                                 <div className="flex justify-center items-center w-8 h-8 rounded-full bg-gradient-to-b group-hover:bg-gradient-to-t duration-500 from-[#80beef] to-[#333333]">
