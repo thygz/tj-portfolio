@@ -48,17 +48,17 @@ const Contact = () => {
                         </p>
                         <div className="flex flex-col gap-5 text-[1.25rem] font-light mt-8 text-[#333333]">
                             <a
-                                className="flex items-center gap-2"
+                                className="flex gap-2"
                                 href="mailto:traxxjester25@gmail.com"
                             >
                                 <IoMdMail className="text-3xl" />{' '}
                                 traxxjester25@gmail.com
                             </a>
-                            <span className="flex items-center gap-2">
+                            <span className="flex gap-2">
                                 <FaPhoneAlt className="text-3xl" />{' '}
                                 +639296051758
                             </span>
-                            <span className="flex items-center gap-2">
+                            <span className="flex gap-2">
                                 <FaLocationDot className="text-3xl" /> Timalan
                                 Concepcion, Naic Cavite
                             </span>
