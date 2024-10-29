@@ -54,8 +54,7 @@ const Skills = () => {
         {
             icon: `${time_management}`,
             title: 'Time Management',
-            description:
-                'Coordinates the tasks and activities to maximize work efficiency',
+            description: 'Coordinates the tasks to maximize work efficiency',
         },
         {
             icon: `${communication}`,
@@ -66,7 +65,7 @@ const Skills = () => {
             icon: `${collaboration}`,
             title: 'Collaboration',
             description:
-                'Capable of working well with others to produce higher quality work',
+                'Capable of working with others to produce quality work',
         },
         {
             icon: `${adaptation}`,
@@ -92,15 +91,15 @@ const Skills = () => {
             className="py-20 lg:py-24 bg-[#fafafa] border-y-[3px] border-[#dddddd]"
             id="skills"
         >
-            <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-10">
-                <h1 className="text-6xl sm:text-7xl font-extrabold text-[#333333] tracking-tighter">
+            <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10">
+                <h1 className="text-[3.4rem] min-[500px]:text-6xl sm:text-7xl font-extrabold text-[#333333] tracking-tighter">
                     services<span className="text-[#80beef]">.</span>
                 </h1>
-                <div className="flex flex-wrap gap-3 mt-12 sm:mt-14 lg:mt-10">
+                <div className="flex flex-wrap gap-3 mt-6 min-[500px]:mt-12 sm:mt-14 lg:mt-10">
                     {skillsOptions.map((skills, index) => (
                         <button
                             key={index}
-                            className={`font-medium text-lg lg:text-base ${
+                            className={`font-medium text-base min-[500px]:text-lg lg:text-base ${
                                 skills === services
                                     ? 'text-[#ffffff] bg-[#363636] py-1 w-[8.8rem] lg:w-32 rounded-full'
                                     : 'text-[#ffffff] bg-[#959595] rounded-full hover:text-[#ffffff] hover:bg-[#757575] py-1 w-[8.8rem] lg:w-32'
@@ -118,17 +117,17 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
+                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-normal text-[#333333] mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-2 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -144,17 +143,17 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[21rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
+                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-8 min-[520px]:w-8 xl:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-xl lg:text-lg font-normal text-[#333333] mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-2 text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-2 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>

@@ -16,17 +16,17 @@ import resume from '../assets/resume.pdf';
 const About = () => {
     return (
         <section className="" id="about">
-            <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-5 xl:px-14 flex flex-col-reverse lg:flex-row justify-center items-center gap-5 lg:gap-14 xl:gap-36 py-[4.5rem] lg:py-20 xl:py-16">
+            <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-14 flex flex-col-reverse lg:flex-row justify-center items-center gap-5 lg:gap-14 xl:gap-36 py-[4.5rem] lg:py-20 xl:py-16">
                 <img
                     src={tjImage5}
                     alt="image"
-                    className="w-full sm:w-[31rem] lg:w-[28rem] xl:w-[32rem] bg-inherit"
+                    className="w-full sm:w-[29rem] lg:w-[28rem] xl:w-[32rem] bg-inherit"
                 />
                 <div className="flex flex-col">
-                    <h1 className="font-extrabold text-6xl sm:text-7xl text-[#333333] tracking-tighter">
+                    <h1 className="font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
                         about<span className="text-[#80beef]">.</span>
                     </h1>
-                    <p className="font-light mt-5 xl:mt-7 text-[#333333] text-[1.25rem] lg:text-lg">
+                    <p className="font-light mt-5 xl:mt-7 text-[#333333] text-lg min-[500px]:text-xl lg:text-lg">
                         Web development is quite new to me since I am a career
                         shifter. I worked as an equipment and process engineer
                         for the past 10 years. But web development has always
@@ -50,12 +50,12 @@ const About = () => {
                         . Aside from cars and playing guitar, looking out for
                         challenging projects to work on excites me.
                     </p>
-                    <p className="font-light mt-8 lg:mt-7 text-[#757575] text-[1.25rem] lg:text-lg">
+                    <p className="font-light mt-8 lg:mt-7 text-[#333333] italic text-lg min-[500px]:text-xl lg:text-lg">
                         My Mission: Make your products/services attractive to
                         clients and present your business in the most creative
                         way.
                     </p>
-                    <button className="w-full min-[550px]:w-44 lg:w-40 py-3 rounded-full border border-[#333333] bg-[#333333] text-[#ffffff] text-lg lg:text-base font-bold hover:bg-opacity-90 duration-300 active:-translate-y-5 mt-8">
+                    <button className="w-full min-[550px]:w-44 lg:w-40 py-3 rounded-full border border-[#333333] bg-[#333333] text-[#ffffff] text-base min-[500px]:text-lg lg:text-base font-bold hover:bg-opacity-90 duration-300 active:-translate-y-5 mt-8">
                         <a href={resume} download="TJ_Resume">
                             Download CV
                         </a>
@@ -63,18 +63,18 @@ const About = () => {
                 </div>
             </div>
             <div className="w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#fafafa] border-y-[3px] border-[#dddddd]">
-                <div className="max-w-7xl mx-auto px-8 md:px-9 lg:px-10 xl:px-20 flex flex-col lg:flex-row gap-20 md:gap-16 lg:gap-24 xl:gap-24 lg:justify-center lg:items-center">
+                <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-10 xl:px-20 flex flex-col lg:flex-row gap-[4.5rem] min-[500px]:gap-20 md:gap-16 lg:gap-24 xl:gap-24 lg:justify-center lg:items-center">
                     <div className="flex flex-col gap-3 flex-1">
-                        <h1 className="font-semibold text-[2.2rem] sm:text-3xl lg:text-3xl text-[#333333] tracking-tight">
+                        <h1 className="font-semibold text-[2.1rem] sm:text-3xl text-[#333333] tracking-tight">
                             Tech Stacks
                         </h1>
-                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-normal text-opacity-80 mt-3">
+                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80 mt-1 min-[500px]:mt-3 lg:mt-1">
                             These are the tools that I'm currenty using in
                             building your desired websites. But I am also in the
                             process of learning other technology stacks like
                             PHP, Laravel, Python etc.
                         </p>
-                        <p className="text-[1.25rem] lg:text-lg text-[#333333] font-normal text-opacity-80">
+                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80">
                             I keep on enhancing and developing my skills to be
                             able to provide the best websites for you.
                         </p>
