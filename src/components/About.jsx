@@ -50,7 +50,7 @@ const About = () => {
                         . Aside from cars and playing guitar, looking out for
                         challenging projects to work on excites me.
                     </p>
-                    <p className="font-light mt-8 lg:mt-7 text-[#333333] italic text-lg min-[500px]:text-xl lg:text-lg">
+                    <p className="font-light mt-5 lg:mt-5 text-[#333333] italic text-lg min-[500px]:text-xl lg:text-lg">
                         My Mission: Make your products/services attractive to
                         clients and present your business in the most creative
                         way.
@@ -64,17 +64,17 @@ const About = () => {
             </div>
             <div className="w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#fafafa] border-y-[3px] border-[#dddddd]">
                 <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-10 xl:px-20 flex flex-col lg:flex-row gap-[4.5rem] min-[500px]:gap-20 md:gap-16 lg:gap-24 xl:gap-24 lg:justify-center lg:items-center">
-                    <div className="flex flex-col gap-3 flex-1">
-                        <h1 className="font-semibold text-[2.1rem] sm:text-3xl text-[#333333] tracking-tight">
+                    <div className="flex flex-col flex-1">
+                        <h1 className="font-medium text-[2.1rem] sm:text-3xl text-[#333333] tracking-tight">
                             Tech Stacks
                         </h1>
-                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80 mt-1 min-[500px]:mt-3 lg:mt-1">
+                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80 mt-2 min-[500px]:mt-3 lg:mt-1">
                             These are the tools that I'm currenty using in
                             building your desired websites. But I am also in the
                             process of learning other technology stacks like
                             PHP, Laravel, Python etc.
                         </p>
-                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80">
+                        <p className="text-lg min-[500px]:text-xl lg:text-lg text-[#333333] font-normal text-opacity-80 mt-2">
                             I keep on enhancing and developing my skills to be
                             able to provide the best websites for you.
                         </p>

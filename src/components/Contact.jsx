@@ -39,7 +39,7 @@ const Contact = () => {
                 </h1>
                 <div className="max-w-7xl px-8 sm:px-12 lg:px-5 xl:px-10 pt-5 sm:pt-8 pb-24 lg:pb-28 mx-auto flex flex-col lg:flex-row gap-10 md:gap-10 lg:gap-10 xl:gap-28">
                     <div className="flex flex-col flex-1">
-                        <h1 className="font-semibold text-3xl text-[#333333]">
+                        <h1 className="font-medium text-3xl text-[#333333]">
                             Get in touch
                         </h1>
                         <p className="text-[#333333] text-lg min-[500px]:text-xl lg:text-lg font-light mt-2">

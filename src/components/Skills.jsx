@@ -36,7 +36,7 @@ const Skills = () => {
         {
             icon: `${database}`,
             title: 'Database Management',
-            description: 'Creates, develops and manages databases',
+            description: 'Creates, develops, optimize and manages databases',
         },
         {
             icon: `${git}`,
@@ -101,8 +101,8 @@ const Skills = () => {
                             key={index}
                             className={`font-medium text-base min-[500px]:text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-[#ffffff] bg-[#363636] py-1 w-[8.8rem] lg:w-32 rounded-full'
-                                    : 'text-[#ffffff] bg-[#959595] rounded-full hover:text-[#ffffff] hover:bg-[#757575] py-1 w-[8.8rem] lg:w-32'
+                                    ? 'text-[#333333] bg-[#ffffff] border border-[#363636] py-1 w-[8.8rem] lg:w-32 rounded-full'
+                                    : 'text-[#757575] bg-[#dddddd] rounded-full hover:text-[#ffffff] hover:bg-[#959595] py-1 w-[8.8rem] lg:w-32'
                             }`}
                             onClick={() => setServices(skills)}
                         >
@@ -111,7 +111,7 @@ const Skills = () => {
                     ))}
                 </div>
                 {services === 'Coding Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-5 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
                         {codingSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
@@ -121,13 +121,13 @@ const Skills = () => {
                                     <img
                                         src={skills.icon}
                                         alt="icon"
-                                        className="w-8 min-[520px]:w-8 xl:w-9"
+                                        className="w-9 min-[520px]:w-10 lg:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-6 lg:mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-1 sm:mt-3 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -137,7 +137,7 @@ const Skills = () => {
                     </div>
                 )}
                 {services === 'Soft Skills' && (
-                    <div className="flex flex-wrap justify-center items-center gap-y-5 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
+                    <div className="flex flex-wrap justify-center items-center gap-y-10 gap-x-3 sm:gap-y-16 min-[410px]:gap-x-6 lg:gap-y-12 lg:gap-x-6 xl:gap-x-10 mt-10 sm:mt-14 lg:mt-10">
                         {softSkillsContent.map((skills, index) => (
                             <div
                                 key={index}
@@ -147,13 +147,13 @@ const Skills = () => {
                                     <img
                                         src={skills.icon}
                                         alt="icon"
-                                        className="w-8 min-[520px]:w-8 xl:w-9"
+                                        className="w-9 min-[520px]:w-10 lg:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-6 lg:mt-5">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-2 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-1 sm:mt-3 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
                                             {skills.description}
                                         </p>
                                     </div>

@@ -56,7 +56,7 @@ const Project = () => {
                             />
                         </Link>
                         <div className="flex flex-col flex-1 pb-0">
-                            <h1 className="text-[#333333] text-[2rem] font-light tracking-tight">
+                            <h1 className="text-[#333333] text-[2rem] font-light tracking-normal">
                                 {details.title}
                             </h1>
                             <div className="mt-2 sm:mt-4 lg:mt-2">

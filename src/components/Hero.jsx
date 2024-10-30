@@ -15,7 +15,7 @@ const Hero = () => {
                     <p className="relative text-[3.1rem] sm:text-7xl lg:text-6xl xl:text-7xl font-extrabold text-[#333333] tracking-tighter">
                         Teejay Villaluz
                     </p>
-                    <p className="text-[1.37rem] min-[410px]:text-[1.45rem] md:text-2xl lg:max-w-xl font-light text-[#757575] mt-2 sm:mt-4 lg:mt-3 xl:mt-5">
+                    <p className="text-[1.3rem] min-[410px]:text-[1.35rem] md:text-2xl lg:max-w-xl font-light text-[#757575] mt-2 sm:mt-4 lg:mt-3 xl:mt-5">
                         An Equipment/Process Engineer that codes!
                     </p>
                     <p className="lg:max-w-md xl:max-w-lg text-lg min-[500px]:text-xl lg:text-lg mt-5 min-[500px]:mt-7 lg:mt-5 font-light text-[#333333]">
@@ -44,7 +44,7 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     src={tjImage}
                     alt="tj-image"
-                    className="min-[390px]:w-[24rem] min-[410px]:w-[25em] min-[425px]:w-[26rem] min-[500px]:w-[27rem] sm:w-[34rem] lg:w-[33rem] xl:w-[34rem] z-10 px-8 md:px-9 lg:px-0"
+                    className="min-[390px]:w-[25rem] min-[410px]:w-[26rem] min-[425px]:w-[27rem] sm:w-[34rem] lg:w-[30rem] xl:w-[34rem] z-10 px-8 md:px-9 lg:px-0"
                 />
                 {/* <motion.div
                     initial={{ x: 100, opacity: 0 }}
