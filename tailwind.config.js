@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                lato: ['Lato', 'sans-serif'],
+                mulish: ['Mulish', 'sans-serif'],
             },
             backgroundImage: {
                 background2: 'url(./assets/background2.jpg)',

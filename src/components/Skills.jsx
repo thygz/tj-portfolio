@@ -21,7 +21,8 @@ const Skills = () => {
         {
             icon: `${frontend}`,
             title: 'Frontend Development',
-            description: 'Translate visual designs into functional code',
+            description:
+                'Translate visual designs into functional and clean code',
         },
         {
             icon: `${backend}`,
@@ -59,7 +60,8 @@ const Skills = () => {
         {
             icon: `${communication}`,
             title: 'Communication',
-            description: 'Capable of listening, speaking and observing',
+            description:
+                'Capable of listening, speaking, observing and suggesting',
         },
         {
             icon: `${collaboration}`,
