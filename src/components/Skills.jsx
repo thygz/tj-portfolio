@@ -119,7 +119,7 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[20rem] relative z-10">
+                                <div className="flex flex-col p-4 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[20rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
@@ -145,7 +145,7 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
+                                <div className="flex flex-col p-4 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[20rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
