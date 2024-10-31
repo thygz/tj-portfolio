@@ -39,24 +39,24 @@ const Project = () => {
 
     return (
         <section className="" id="projects">
-            <h1 className="max-w-7xl mx-auto pt-20 md:pt-24 lg:pt-28 -mb-10 sm:-mb-5 px-8 sm:px-12 lg:px-5 xl:px-10 font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
+            <h1 className="max-w-6xl mx-auto pt-20 md:pt-24 lg:pt-28 -mb-8 sm:-mb-5 px-8 sm:px-12 lg:px-5 xl:px-10 font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
                 projects<span className="text-[#80beef]">.</span>
             </h1>
             <div className="">
                 {projectDetails.map((details, index) => (
                     <div
                         key={index}
-                        className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-16 lg:gap-5 xl:gap-16 items-center px-8 sm:px-12 lg:px-5 xl:px-10 py-14 md:py-14 lg:py-20 border-b-4 border-[#fafafa]"
+                        className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row gap-16 lg:gap-5 xl:gap-10 items-center px-8 sm:px-12 lg:px-5 xl:px-10 py-14 md:py-14 lg:py-20 border-b-4 border-[#fafafa]"
                     >
                         <Link to={details.link} target="_blank">
                             <img
                                 src={details.image}
                                 alt="project image"
-                                className="w-full sm:w-[36rem] md:w-[39rem] lg:w-[32rem] xl:w-[39rem]"
+                                className="w-full sm:w-[36rem] md:w-[39rem] lg:w-[32rem] xl:w-[36rem]"
                             />
                         </Link>
                         <div className="flex flex-col flex-1 pb-0">
-                            <h1 className="text-[#333333] text-[2rem] font-light tracking-normal">
+                            <h1 className="text-[#333333] text-[1.9rem] sm:text-[2rem] font-light tracking-normal">
                                 {details.title}
                             </h1>
                             <div className="mt-2 sm:mt-4 lg:mt-2">

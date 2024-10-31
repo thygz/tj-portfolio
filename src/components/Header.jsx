@@ -68,7 +68,7 @@ const Headers = () => {
                     : 'static py-3 lg:py-3'
             } ${toggleMenu && 'bg-[#111111]'}`}
         >
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-5 md:px-9 lg:px-5 z-50">
+            <div className="max-w-6xl mx-auto flex justify-between items-center px-5 md:px-9 lg:px-5 z-50">
                 <img
                     src={logo}
                     alt="logo"

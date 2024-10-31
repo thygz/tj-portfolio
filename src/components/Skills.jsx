@@ -93,7 +93,7 @@ const Skills = () => {
             className="py-20 lg:py-24 bg-[#fafafa] border-y-[3px] border-[#dddddd]"
             id="skills"
         >
-            <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10">
+            <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10">
                 <h1 className="text-[3.4rem] min-[500px]:text-6xl sm:text-7xl font-extrabold text-[#333333] tracking-tighter">
                     services<span className="text-[#80beef]">.</span>
                 </h1>
@@ -103,7 +103,7 @@ const Skills = () => {
                             key={index}
                             className={`font-medium text-base min-[500px]:text-lg lg:text-base ${
                                 skills === services
-                                    ? 'text-[#333333] bg-[#ffffff] border border-[#363636] py-1 w-[8.8rem] lg:w-32 rounded-full'
+                                    ? 'text-[#333333] bg-[#ffffff] border border-[#757575] py-1 w-[8.8rem] lg:w-32 rounded-full'
                                     : 'text-[#757575] bg-[#dddddd] rounded-full hover:text-[#ffffff] hover:bg-[#959595] py-1 w-[8.8rem] lg:w-32'
                             }`}
                             onClick={() => setServices(skills)}
@@ -119,17 +119,17 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
+                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[20rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-9 min-[520px]:w-10 lg:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-6 lg:mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-7 lg:mt-6">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-1 sm:mt-3 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-1 sm:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light">
                                             {skills.description}
                                         </p>
                                     </div>
@@ -145,17 +145,17 @@ const Skills = () => {
                                 key={index}
                                 className="relative group w-full sm:w-auto"
                             >
-                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
+                                <div className="flex flex-col p-4 min-[500px]:p-5 shadow-[0px_1px_4px_0px_rgba(0,0,0,0.2)] bg-[#ffffff] rounded-xl w-full sm:w-[17rem] md:w-[20rem] lg:w-[19rem] xl:w-[22rem] relative z-10">
                                     <img
                                         src={skills.icon}
                                         alt="icon"
                                         className="w-9 min-[520px]:w-10 lg:w-9"
                                     />
                                     <div>
-                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-6 lg:mt-5">
+                                        <h1 className="text-lg min-[500px]:text-xl lg:text-lg font-normal text-[#333333] mt-4 sm:mt-7 lg:mt-6">
                                             {skills.title}
                                         </h1>
-                                        <p className="mt-1 sm:mt-3 lg:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light leading-6 lg:leading-5">
+                                        <p className="mt-1 sm:mt-2 text-base min-[500px]:text-lg lg:text-base text-[#333333] font-light">
                                             {skills.description}
                                         </p>
                                     </div>

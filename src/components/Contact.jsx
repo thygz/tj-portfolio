@@ -34,10 +34,10 @@ const Contact = () => {
         <section className="" id="contact">
             <Toaster />
             <div className="bg-[#fafafa]">
-                <h1 className="max-w-7xl px-8 sm:px-12 lg:px-5 xl:px-10 mx-auto pt-24 lg:pt-28 font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
+                <h1 className="max-w-6xl px-8 sm:px-12 lg:px-5 xl:px-10 mx-auto pt-24 lg:pt-28 font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
                     contact<span className="text-[#80beef]">.</span>
                 </h1>
-                <div className="max-w-7xl px-8 sm:px-12 lg:px-5 xl:px-10 pt-5 sm:pt-8 pb-24 lg:pb-28 mx-auto flex flex-col lg:flex-row gap-10 md:gap-10 lg:gap-10 xl:gap-28">
+                <div className="max-w-6xl px-8 sm:px-12 lg:px-5 xl:px-10 pt-5 sm:pt-8 pb-24 lg:pb-28 mx-auto flex flex-col lg:flex-row gap-10 md:gap-10 lg:gap-10 xl:gap-28">
                     <div className="flex flex-col flex-1">
                         <h1 className="font-medium text-3xl text-[#333333]">
                             Get in touch

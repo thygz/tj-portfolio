@@ -16,11 +16,11 @@ import resume from '../assets/resume.pdf';
 const About = () => {
     return (
         <section className="" id="about">
-            <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-14 flex flex-col-reverse lg:flex-row justify-center items-center gap-5 lg:gap-14 xl:gap-36 py-[4.5rem] lg:py-20 xl:py-16">
+            <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10 flex flex-col-reverse lg:flex-row justify-center items-center gap-5 lg:gap-14 xl:gap-24 py-[4.5rem] lg:py-20 xl:py-16">
                 <img
                     src={tjImage5}
                     alt="image"
-                    className="w-full sm:w-[29rem] lg:w-[28rem] xl:w-[32rem] bg-inherit"
+                    className="w-full sm:w-[29rem] lg:w-[28rem] xl:w-[30rem] bg-inherit"
                 />
                 <div className="flex flex-col">
                     <h1 className="font-extrabold text-[3.4rem] min-[500px]:text-6xl sm:text-7xl text-[#333333] tracking-tighter">
@@ -63,7 +63,7 @@ const About = () => {
                 </div>
             </div>
             <div className="w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#fafafa] border-y-[3px] border-[#dddddd]">
-                <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 flex flex-col lg:flex-row gap-[4.5rem] min-[500px]:gap-20 md:gap-16 lg:gap-5 xl:gap-24 lg:justify-center lg:items-center">
+                <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 xl:px-20 flex flex-col lg:flex-row gap-[4.5rem] min-[500px]:gap-20 md:gap-16 lg:gap-5 xl:gap-24 lg:justify-center lg:items-center">
                     <div className="flex flex-col flex-1">
                         <h1 className="font-medium text-[2.1rem] sm:text-3xl text-[#333333] tracking-tight">
                             Tech Stacks
@@ -79,7 +79,7 @@ const About = () => {
                             able to provide the best websites for you.
                         </p>
                     </div>
-                    <div className="flex flex-1 justify-center items-center flex-wrap gap-x-[4.5rem] min-[410px]:gap-x-20 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-8 lg:gap-y-16 xl:gap-y-16 text-5xl lg:pl-16 xl:pl-20">
+                    <div className="flex flex-1 justify-center items-center flex-wrap gap-x-5 min-[370px]:gap-x-7 min-[410px]:gap-x-10 md:gap-x-14 lg:gap-x-8 xl:gap-x-10 gap-y-7 md:gap-y-8 lg:gap-y-16 xl:gap-y-16 text-5xl lg:pl-16 xl:pl-20">
                         <FaHtml5 className="text-[#e34c26] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <FaCss3Alt className="text-[#264de4] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />
                         <IoLogoJavascript className="text-[#f0db4f] shadow-[1px_1px_3px_1px_rgba(0,0,0,0.3)] bg-[#ffffff] w-14 xl:w-16 h-14 xl:h-16 p-2 rounded-md" />

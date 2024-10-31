@@ -4,15 +4,18 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className="-mt-20 pt-28 sm:pt-32 lg:pt-28" id="hero">
-            <div className="max-w-7xl mx-auto flex gap-0 sm:gap-6 lg:gap-0 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center lg:px-5 pb-20 lg:pb-8 relative">
+        <section
+            className="-mt-20 pt-28 sm:pt-32 lg:pt-[6.5rem] xl:pt-[6.5rem]"
+            id="hero"
+        >
+            <div className="max-w-6xl mx-auto flex gap-0 sm:gap-6 lg:gap-0 xl:gap-5 flex-col-reverse lg:flex-row justify-center items-center lg:px-5 pb-20 lg:pb-8 relative">
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="lg:max-w-5xl mx-auto flex flex-1 flex-col px-8 sm:px-12 lg:px-2 mt-3 lg:mt-0 lg:pr-0 z-10"
                 >
-                    <p className="relative text-[3.1rem] sm:text-7xl lg:text-[4.2rem] xl:text-7xl font-extrabold text-[#333333] tracking-tighter font-mulish">
+                    <p className="relative text-[3.1rem] sm:text-7xl lg:text-[4.1rem] xl:text-7xl font-extrabold text-[#333333] tracking-tighter font-mulish">
                         Teejay Villaluz
                     </p>
                     <p className="text-[1.3rem] min-[410px]:text-[1.35rem] md:text-2xl lg:max-w-xl font-light text-[#757575] mt-2 sm:mt-4 lg:mt-3 xl:mt-5">
@@ -44,7 +47,7 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     src={tjImage}
                     alt="tj-image"
-                    className="min-[390px]:w-[25rem] min-[410px]:w-[26rem] min-[425px]:w-[27rem] sm:w-[34rem] lg:w-[28rem] xl:w-[34rem] z-10 px-8 md:px-9 lg:px-0"
+                    className="min-[390px]:w-[25rem] min-[410px]:w-[26rem] min-[425px]:w-[27rem] sm:w-[34rem] lg:w-[28rem] xl:w-[31rem] z-10 px-8 md:px-9 lg:px-0"
                 />
                 {/* <motion.div
                     initial={{ x: 100, opacity: 0 }}
