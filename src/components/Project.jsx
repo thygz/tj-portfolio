@@ -1,5 +1,6 @@
 import traxxRecipe1 from '../assets/projectImage/TraxxRecipe1.png';
 import traxxDeploy1 from '../assets/projectImage/TraxxDeploy1.png';
+import jhSereno from '../assets/projectImage/JhSereno.png';
 import usedCarsTraxx1 from '../assets/projectImage/UsedCarsTraxx1.png';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
@@ -22,8 +23,16 @@ const Project = () => {
             title: 'TraxxDeploy',
             description1:
                 'A static website about webb apps deployment platforms from large scale enterprise APIs to static websites for individuals.',
-            description2: `Originally this website coded using HTML, CSS and JS. I converted the code to practice ReactJS, and this is the result. This is my first encounter with React JS and I'm amazed at JSX and how single-page application works.`,
+            description2: `Originally this website was coded using HTML, CSS and JS. I converted the code to practice ReactJS, and this is the result. This is my first encounter with React JS and I'm amazed at JSX and how single-page application works.`,
             technologies: 'ReactJS',
+        },
+        {
+            image: `${jhSereno}`,
+            link: 'https://luxury-assignment.vercel.app/',
+            title: 'JHSereno',
+            description1: 'A service page for real estate business website.',
+            description2: `This project is focused on designing a simple and elegant website using Tailwind CSS. I'm thrilled with the outcome of the header/navbar animation when scrolling the page.`,
+            technologies: 'ReactJS, Tailwind CSS',
         },
         {
             image: `${usedCarsTraxx1}`,
