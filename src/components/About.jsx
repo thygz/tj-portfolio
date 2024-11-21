@@ -119,7 +119,7 @@ const About = () => {
                 </div>
             </div>
             <div className="relative overflow-hidden w-full py-[4.5rem] md:py-20 lg:py-[5.5rem] bg-[#333333] border-y-[3px] border-[#dddddd]">
-                <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10 flex flex-col lg:flex-row gap-[4.5rem] min-[500px]:gap-20 md:gap-16 lg:gap-10 xl:gap-20 lg:justify-center lg:items-center">
+                <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-5 xl:px-10 flex flex-col lg:flex-row gap-10 sm:gap-20 md:gap-16 lg:gap-10 xl:gap-20 lg:justify-center lg:items-center">
                     <div className="flex flex-col flex-1 z-10">
                         <h1 className="text-white text-[1.9rem] sm:text-[2rem] font-light tracking-normal">
                             Tech Stacks
