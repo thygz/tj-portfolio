@@ -15,7 +15,7 @@ const Project = () => {
                 'A recipe website where you may see random recipes, search recipes by ingredients, save your favorite meal and more. In addition to reading the instructions, you can view the provided video while cooking.',
             description2:
                 'In this project, I learned how to use API and integrate it on a website. I used async await and sometimes .then when fetching data.',
-            technologies: 'HTML, CSS & Javascript with API',
+            technologies: 'HTML | CSS | Javascript | API',
         },
         {
             image: `${traxxDeploy1}`,
@@ -32,7 +32,7 @@ const Project = () => {
             title: 'JHSereno',
             description1: 'A service page for real estate business website.',
             description2: `This project is focused on designing a simple and elegant website using Tailwind CSS. I'm thrilled with the outcome of the header/navbar animation when scrolling the page.`,
-            technologies: 'ReactJS, Tailwind CSS',
+            technologies: 'ReactJS | Tailwind CSS',
         },
         {
             image: `${usedCarsTraxx1}`,
@@ -42,7 +42,8 @@ const Project = () => {
                 'Car buy and sell website. The user should be logged-in, to be able to use all features, including buying and selling a car, picking favorites, editing profiles and vehicles for sale, searching and filtering cars etc.',
             description2:
                 'I learned many things while doing this project. How to make and manipulate databases. How to authenticate users and form validations, handle errors, loading and success. The magic of react hooks etc.',
-            technologies: 'ReactJS, MongoDB, Express, NodeJS, Tailwind',
+            technologies:
+                'ReactJS | Redux | MongoDB | Express | NodeJS | Tailwind CSS | Firebase',
         },
     ];
 
@@ -76,7 +77,7 @@ const Project = () => {
                                     {details.description2}
                                 </p>
                             </div>
-                            <h5 className="text-[#333333] text-lg min-[500px]:text-xl lg:text-lg font-light mt-5 lg:mt-4">
+                            <h5 className="text-[#333333] text-lg min-[500px]:text-xl lg:text-lg font-light mt-5 lg:mt-4 italic">
                                 {details.technologies}
                             </h5>
                             <Link

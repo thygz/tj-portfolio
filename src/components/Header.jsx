@@ -62,7 +62,7 @@ const Headers = () => {
 
     return (
         <header
-            className={`top-0 z-40 transition-all min-[900px]:transition-none duration-200 ease-in ${
+            className={`top-0 z-40 transition-all duration-300 ease-linear ${
                 scrolled
                     ? 'sticky bg-[#111111] py-[0.55rem] sm:py-[0.45rem] lg:py-3'
                     : 'static py-3 lg:py-3'
